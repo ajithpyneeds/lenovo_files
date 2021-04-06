@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h3>{{title}}</h3>
+  <ul>
+    {% for post in posts %}
+    <li><a href="{% url 'details.html' %}"></a>{{post.title}}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}

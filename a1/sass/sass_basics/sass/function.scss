@@ -1,0 +1,38 @@
+$primary-color: #c3c3c3;
+$border-width: 2px;
+
+$container: 1000px;
+$padding: 50px;
+
+$a: $container * 2;
+$b: $padding * 2;
+
+.half1 {
+  height: $container/2 + $padding/2;
+}
+
+.half2 {
+  height: $container/2 - $padding/2;
+}
+
+.half3 {
+  height: $a/$b;
+}
+
+/////////////////////////////////////
+
+@function half-height($first, $second) {
+  @return $container/$first - $container/$second;
+}
+
+.box1 {
+  height: half-height(2, 5);
+}
+
+.box2 {
+  height: half-height(2, 10);
+}
+
+.box3 {
+  height: half-height(2, 20);
+}

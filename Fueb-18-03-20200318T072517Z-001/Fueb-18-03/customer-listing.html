@@ -1,0 +1,918 @@
+<!DOCTYPE js>
+<html>
+    <head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Noto+Sans|Noto+Sans+TC:300,400,500,700&amp;display=swap"/>
+      <title>Fueb - Customer Listing</title>
+      <meta name="description" content=""/>
+      <meta name="author" content="Admin"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+      <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500,700&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Barlow&amp;display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link href="./css/app.css" rel="stylesheet"></head>
+  <body>
+    <header class="fb-header fb-header--white bg-animations">
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="d-flex align-items-center justify-content-between">
+                <li class="gsap-logo gsap-logo--black"><a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="32" viewBox="0 0 90 32">
+                      <g>
+                        <path d="M76.285 27.57c3.554 0 5.676-2.838 5.676-7.59 0-3.647-1.687-7.327-5.456-7.327-1.698 0-3.033.559-3.966 1.661-1.017 1.202-1.534 3.049-1.534 5.49v1.011c0 3.265 1.387 6.755 5.28 6.755m-27.852-9.983h9.358l-.088-.546c-.277-1.706-1.232-4.57-4.516-4.57-1.734 0-3.949.792-4.65 4.56zm-.227 3.939l.053.519c.388 3.741 1.968 5.483 4.974 5.483 2.217 0 3.81-1.01 4.37-2.774l.064-.2H64v-3.028zm-5.92 4.448v5.419h-7.008v-2.727l-1.475 1.73-.028.021C31.546 32 29.409 32 27.524 32c-2.18 0-4.085-.57-5.508-1.646-1.28-.967-2.122-2.326-2.373-3.826-.178-1.182-.214-2.576-.214-4.307V9.143h7.007v10.204c0 .725.044 2.61.18 3.808.316 2.64 1.724 3.925 4.306 3.925 2.646 0 4.356-2.293 4.356-5.842V9.143h7.008v5.559l.006-.014a11.193 11.193 0 0 1 2.155-3.15C46.71 9.224 49.874 8 53.595 8c3.677 0 6.738 1.294 8.853 3.743.61.706 1.129 1.508 1.552 2.372V0h7.005v12.023l.775-1.326.034-.03c1.715-1.53 4.491-2.444 7.427-2.444 6.015 0 9.902 4.46 9.902 11.36 0 3.825-1.103 7.026-3.19 9.257-1.905 2.038-4.571 3.16-7.506 3.16-1.474 0-4.229-.17-6.13-1.306l-.036-.022-1.276-1.407v2.12H64v-5.193C62.116 29.902 58.237 32 53.142 32c-3.464 0-6.41-1.015-8.516-2.936a9.92 9.92 0 0 1-2.334-3.227c-.542-1.182-.897-2.51-1.055-3.962.14 1.508.494 2.883 1.049 4.1zM21.714 1.143v5.303H6.925v7.927H19.31v5.303H6.925V32H0V1.143z"></path>
+                      </g>
+                    </svg></a></li>
+                <li class="d-md-flex align-items-center d-none">
+                  <nav>
+                    <ul class="fb-mainnav fb-mainnav--black align-items-center d-sm-flex">
+                      <li><a class="fb-nav-link" href="javascript:void(0)">Stories</a></li>
+                      <li class="js-dropdown-menu menu-item"><a class="fb-nav-link" href="javascript:void(0)">Products<span class="menu-arrow ml-1"><img class="ml-2" src="./assets/icons/dropdown_arrow.svg" alt="dropdown_arrow"/></span></a>
+                        <div class="menu-list">
+                          <ul>
+                            <li><a href="#">Door Lock</a></li>
+                            <li><a href="#">Door Bell</a></li>
+                            <li><a href="#">Switches</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a class="fb-nav-link" href="forum-login.html">Community</a></li>
+                      <li><a class="fb-nav-link" href="partner-with-us.html">partner with us</a></li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="d-flex align-items-center">
+                  <label class="menu-toggle__wrap js-navtoggler">
+                    <input type="checkbox"/>
+                    <div>
+                      <div class="menu-toggle__dots"><span></span><span></span></div>
+                      <svg>
+                        <use xlink:href="#path"></use>
+                      </svg>
+                      <svg>
+                        <use xlink:href="#path"></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+                      <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                    </symbol>
+                  </svg>
+                </li>
+              </ul>
+              <!--Header menu-->
+              <nav class="menu full-screen-nav js-header-animate">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="menu-nav-list">
+                        <li class="menu-nav-list__item"><a class="menu-link" href="index.html">Home</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="product.html">Products</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="experience.html">Fueb's Experience</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="customer-stories.html">Customer Stories</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="forum-login.html">Community</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="menu-nav-list">
+                        <li class="menu-nav-list__item"><a class="menu-link" href="app.html">Fueb App</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="about-us.html">About Us</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="faq.html">FAQ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="menu-nav-footer">
+                      <ul class="menu-nav-footer__left">
+                        <li class="menu-nav-footer-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li class="menu-nav-footer-item"><a href="javascript:void(0);">Terms and conditions                </a></li>
+                      </ul>
+                      <ul class="fub-social-list pt-0">
+                        <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-twitter"></i></a></li>
+                        <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-facebook"></i></a></li>
+                        <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <svg class="text-gradient-value" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <lineargradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#6164F1;stop-opacity:1"></stop>
+          <stop offset="100%" style="stop-color:#FF6FD4;stop-opacity:1"></stop>
+        </lineargradient>
+      </svg>
+    </header>
+    <main class="js-white-header js-clisting-page main-top">
+      <div class="page-loader" style="width: 100%;height: 100%;position: fixed;background: #ffffff;z-index: 10000;left: 0;top: 0;"></div>
+      <section class="cl-banner section-padding6" id="cl-banner">
+        <div class="container">
+          <div class="row mb-4 mb-md-0">
+            <div class="col-12 text-center position-relative">
+              <h3 class="cl-banner-heading">We are because of our<span>Happy Customers</span></h3>
+              <div class="cl-banner-faces">   
+                <div class="cl-banner-faces__img-c pos-1"><a class="customer-listing-img" href="#image-1"><img src="./assets/images/customer-listing/image-1.png" alt="user"/><a class="gradient-text gradient-link cl-grd-text mt-3 mt-md-4" href="#" data-value="See Leena Story">
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <text>See Leena Story</text>
+                      </svg></a></a></div>
+                <div class="cl-banner-faces__img-c pos-2"><a class="customer-listing-img" href="#image-2"><img src="./assets/images/customer-listing/image-2.png" alt="user"/></a></div>
+                <div class="cl-banner-faces__img-c pos-3"><a class="customer-listing-img" href="#image-3"><img src="./assets/images/customer-listing/image-3.png" alt="user"/></a></div>
+                <div class="cl-banner-faces__img-c pos-4"><a class="customer-listing-img" href="#image-4"><img src="./assets/images/customer-listing/image-4.png" alt="user"/></a></div>
+                <div class="cl-banner-faces__img-c pos-5"><a class="customer-listing-img" href="#image-5"><img src="./assets/images/customer-listing/image-5.png" alt="user"/></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cuustomer-tab">
+        <div class="container">
+          <h2 class="collaborate-heading pb-md-3 mb-0">Customers stories</h2>
+          <ul class="faq-tab nav py-2 py-md-5 d-flex justify-content-between fub-tabs-brder" role="tablist">
+            <li class="nav-item"><a class="nav-link faq-tab-head py-3 py-md-4 px-4 active" id="safty-customer-tab" data-toggle="tab" href="#safty-customer" role="tab" aria-controls="safty" aria-selected="true">Safety </a></li>
+            <li class="nav-item"><a class="nav-link faq-tab-head py-3 py-md-4 px-4" id="Lights-customer-tab" data-toggle="tab" href="#Lights-customer" role="tab" aria-controls="Lights" aria-selected="false">Lights</a></li>
+            <li class="nav-item"><a class="nav-link faq-tab-head py-3 py-md-4 px-4" id="Temperature-customer-tab" data-toggle="tab" href="#Temperature-customer" role="tab" aria-controls="Temperature" aria-selected="false">Temperature</a></li>
+            <li class="nav-item"><a class="nav-link faq-tab-head py-3 py-md-4 px-4" id="lock-customer-tab" data-toggle="tab" href="#lock-customer" role="tab" aria-controls="lock" aria-selected="false">Armour Lock     </a></li>
+            <li class="nav-item"><a class="nav-link faq-tab-head py-3 py-md-4 px-4" id="vibe-customer-tab" data-toggle="tab" href="#vibe-customer" role="tab" aria-controls="vibe" aria-selected="false">Vibe Bell</a></li>
+            <li class="nav-item"><a class="nav-link faq-tab-head py-3 py-md-4 px-4" id="magic-customer-swich" data-toggle="tab" href="#magic-customer-tab" role="tab" aria-controls="vibe" aria-selected="false">Magic Switches</a></li>
+          </ul>
+        </div>
+      </section>
+      <div class="tab-content">
+        <div class="tab-pane active" id="safty-customer" role="tabpanel" aria-labelledby="safty-tab">
+          <section class="bg-white">
+            <div class="container-fluid cl-review-container bg-grey pt-0" id="image-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured js-cl-review-1">
+                      <div class="cl-review-box__img-c vid-container mr-md-4 cl-fisrtCust"><a href="javascript:void(0)"> <span></span></a><img src="./assets/images/customer-listing/image-8.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container pb-0" id="image-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-2">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-7.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-3">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-6.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-black-box position-relative">
+              <div class="animate-bg"></div>
+              <div class="row m-0">
+                <div class="col-12">
+                  <h3 class="cl-black-box__title">We feel its time that you should also be a part of Fueb.</h3><a class="gradient-text gradient-link" href="#" data-value="View All Products">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>View All Products</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured featured--right js-cl-review-4">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-9.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey" id="image-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-5">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-10.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey pb-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-6">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-11.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane" id="Lights-customer" role="tabpanel" aria-labelledby="Lights-tab"> 
+          <section class="bg-white">
+            <div class="container-fluid cl-review-container bg-grey pt-0" id="image-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured js-cl-review-1">
+                      <div class="cl-review-box__img-c vid-container mr-md-4 cl-fisrtCust"><a href="javascript:void(0)"> <span></span></a><img src="./assets/images/customer-listing/image-8.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container pb-0" id="image-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-2">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-7.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-3">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-6.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-black-box position-relative">
+              <div class="animate-bg"></div>
+              <div class="row m-0">
+                <div class="col-12">
+                  <h3 class="cl-black-box__title">We feel its time that you should also be a part of Fueb.</h3><a class="gradient-text gradient-link" href="#" data-value="View All Products">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>View All Products</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured featured--right js-cl-review-4">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-9.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey" id="image-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-5">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-10.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey pb-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-6">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-11.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane" id="Temperature-customer" role="tabpanel" aria-labelledby="Temperature-tab"> 
+          <section class="bg-white">
+            <div class="container-fluid cl-review-container bg-grey pt-0" id="image-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured js-cl-review-1">
+                      <div class="cl-review-box__img-c vid-container mr-md-4 cl-fisrtCust"><a href="javascript:void(0)"> <span></span></a><img src="./assets/images/customer-listing/image-8.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container pb-0" id="image-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-2">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-7.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-3">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-6.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-black-box position-relative">
+              <div class="animate-bg"></div>
+              <div class="row m-0">
+                <div class="col-12">
+                  <h3 class="cl-black-box__title">We feel its time that you should also be a part of Fueb.</h3><a class="gradient-text gradient-link" href="#" data-value="View All Products">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>View All Products</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured featured--right js-cl-review-4">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-9.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey" id="image-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-5">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-10.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey pb-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-6">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-11.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane" id="lock-customer" role="tabpanel" aria-labelledby="lock-tab"> 
+          <section class="bg-white">
+            <div class="container-fluid cl-review-container bg-grey pt-0" id="image-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured js-cl-review-1">
+                      <div class="cl-review-box__img-c vid-container mr-md-4 cl-fisrtCust"><a href="javascript:void(0)"> <span></span></a><img src="./assets/images/customer-listing/image-8.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container pb-0" id="image-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-2">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-7.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-3">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-6.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-black-box position-relative">
+              <div class="animate-bg"></div>
+              <div class="row m-0">
+                <div class="col-12">
+                  <h3 class="cl-black-box__title">We feel its time that you should also be a part of Fueb.</h3><a class="gradient-text gradient-link" href="#" data-value="View All Products">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>View All Products</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured featured--right js-cl-review-4">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-9.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey" id="image-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-5">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-10.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey pb-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-6">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-11.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane" id="vibe-customer" role="tabpanel" aria-labelledby="lock-tab"> 
+          <section class="bg-white">
+            <div class="container-fluid cl-review-container bg-grey pt-0" id="image-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured js-cl-review-1">
+                      <div class="cl-review-box__img-c vid-container mr-md-4 cl-fisrtCust"><a href="javascript:void(0)"> <span></span></a><img src="./assets/images/customer-listing/image-8.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container pb-0" id="image-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-2">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-7.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-3">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-6.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-black-box position-relative">
+              <div class="animate-bg"></div>
+              <div class="row m-0">
+                <div class="col-12">
+                  <h3 class="cl-black-box__title">We feel its time that you should also be a part of Fueb.</h3><a class="gradient-text gradient-link" href="#" data-value="View All Products">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>View All Products</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured featured--right js-cl-review-4">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-9.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey" id="image-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-5">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-10.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey pb-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-6">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-11.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane" id="magic-customer-tab" role="tabpanel" aria-labelledby="lock-tab"> 
+          <section class="bg-white">
+            <div class="container-fluid cl-review-container bg-grey pt-0" id="image-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured js-cl-review-1">
+                      <div class="cl-review-box__img-c vid-container mr-md-4 cl-fisrtCust"><a href="javascript:void(0)"> <span></span></a><img src="./assets/images/customer-listing/image-8.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container pb-0" id="image-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-2">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-7.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-3">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-6.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-black-box position-relative">
+              <div class="animate-bg"></div>
+              <div class="row m-0">
+                <div class="col-12">
+                  <h3 class="cl-black-box__title">We feel its time that you should also be a part of Fueb.</h3><a class="gradient-text gradient-link" href="#" data-value="View All Products">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>View All Products</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container" id="image-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box featured featured--right js-cl-review-4">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-9.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey" id="image-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box js-cl-review-5">
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-10.png" alt="user"/></div>
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid cl-review-container bg-grey pb-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="cl-review-box img-right js-cl-review-6">
+                      <div class="cl-review">
+                        <h4 class="cl-review__text">I will be Saving lot of time with the Help of the Fueb Home Automation</h4><a class="gradient-text gradient-link" href="#" data-value="See Leena Story">
+                          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <text>See Leena Story</text>
+                          </svg></a>
+                      </div>
+                      <div class="cl-review-box__img-c"><img src="./assets/images/customer-listing/image-11.png" alt="user"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="fub-footer fub-footer--secondary">
+      <div class="container">
+        <div class="row fub-footer__pb6 pt-4 pt-md-5">
+          <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+            <h3 class="section-heading mb-md-4"> Stay in touch!</h3>
+            <p class="fub-footer__des">Leave us your details for all the latest updates from us.</p>
+          </div>
+          <div class="col-md-7 col-lg-8 d-flex align-items-end justify-content-end">
+            <form class="join-form form-input-secondary mt-0 mr-md-0 footer-form-mb" autocomplete="off">
+              <div class="form-group mb-0">
+                <input class="form-control input-type newslttr-input" id="email" type="text" required=""/>
+                <label class="form-control-placeholder" for="email">Email ID</label>
+              </div>
+              <button class="btn btn--gradient mt-0 ml-3 ml-lg-4" type="submit"> <span>Subscribe</span></button>
+            </form>
+          </div>
+        </div>
+        <hr class="horizontal-row"/>
+        <div class="row footer-nav-info">
+          <div class="col-md-4 mb-4 mb-md-0"><img class="mb-3 footer-logo" src="assets/images/black-logo.png" alt="white logo"/>
+            <p class="fub-footer__des">We aim to simplify home automation by creating a range of luxurious, utilitarian products to enhance your everyday life.</p>
+          </div>
+          <div class="col-6 col-md-2 mb-3 mb-md-0">
+            <h6 class="fub-footer__heading mb-0 mb-md-2">Products</h6>
+            <ul class="fub-footer-list">
+              <li class="fub-footer-list__item"><a href="product.html">Armour Smart Lock</a></li>
+              <li class="fub-footer-list__item"><a href="product-vibe-bell.html">Vibe Door Bell</a></li>
+              <li class="fub-footer-list__item"><a href="javascript:void(0);">Touch Magic</a></li>
+              <li class="fub-footer-list__item"><a href="product-switch.html">Switches</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3 mb-md-0">
+            <h6 class="fub-footer__heading mb-0 mb-md-2">Fueb</h6>
+            <ul class="fub-footer-list">
+              <li class="fub-footer-list__item"><a href="about-us.html">About us</a></li>
+              <li class="fub-footer-list__item"><a href="partner-with-us.html">Partners</a></li>
+              <li class="fub-footer-list__item"><a href="javascript:void(0);">News & Events</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fub-footer__heading mb-0 mb-md-2">Support</h6>
+            <ul class="fub-footer-list">
+              <li class="fub-footer-list__item"><a href="javascript:void(0);">Community</a></li>
+              <li class="fub-footer-list__item"><a href="contact-us.html">Contact Us</a></li>
+              <li class="fub-footer-list__item"><a href="blog.html">Blog</a></li>
+              <li class="fub-footer-list__item"><a href="faq.html">FAQ</a></li>
+              <li class="fub-footer-list__item"><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fub-footer__heading mb-0 mb-md-2">Social Media</h6>
+            <ul class="fub-social-list">
+              <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-twitter"></i></a></li>
+              <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-facebook"></i></a></li>
+              <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script><script type="text/javascript" src="./js/vendor.js"></script></body>
+</html>

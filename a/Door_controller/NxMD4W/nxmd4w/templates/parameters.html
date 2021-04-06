@@ -1,0 +1,188 @@
+{% extends 'home2.html' %}
+
+{% block content %}
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="table-responsive m-b-40">
+                                        <form>
+                                            <table class="table table-borderless table-data3">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="2">Parameters</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Controller Name </td>
+                                                        <td><input type="text" name=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Controller ID </td>
+                                                        <td><input type="text" name=""></td>
+                                                    </tr>
+                                                    <tr><td>Controller Type </td>
+                                                        <td><select>
+                                                                      <option value="Controller Type">Controller Type</option>
+                                                                                  <option value="Controller1">Controller1</option>
+                                                                                  <option value="Controller2">Controller2</option>
+                                                                                  <option value="Controller3">Controller3</option>
+                                                                                </select></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Fire Alarm Time </td>
+                                                        <td><input type="text" name="" maxlength="5" size="5"></td></tr>
+                                                    <tr>
+                                                        <td >Auxillary Alarm Time </td>
+                                                        <td><input type="text" name="" maxlength="5" size="5"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Heart Beat Time</td>
+                                                        <td><input type="text" name="" maxlength="5" size="5"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Heart Beat URL</td>
+                                                        <td><input type="text" name="" maxlength="5" size="5"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Port No.</td>
+                                                        <td><input type="text" name="" maxlength="5" size="5"></td>
+                                                    </tr>
+                                                    <tr><td>Concurrent Connection </td>
+                                                        <td><select>
+                                                                      <option value="concurt1">1</option>
+                                                                      <option value="concurt2">2</option>
+                                                                      <option value="concurt3">3</option>
+                                                                      <option value="concurt4">4</option>
+                                                                      <option value="concurt5">5</option>
+                                                                      <option value="concurt6">6</option>
+                                                                      <option value="concurt7">7</option>
+                                                                      <option value="concurt8">8</option>
+                                                                      <option value="concurt9">9</option>
+                                                                      <option value="concurt10">10</option>
+                                                            </select></td>
+                                                    </tr>
+                                                    <tr><td>Mode </td>
+                                                        <td><select>
+                                                                      <option value="Automatic">Automatic</option>
+                                                                                  <option value="Manual">Manual</option>
+
+                                                                                </select></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> <div class="d-flex">Door Interlock </div><br>
+                                                            <input type="checkbox" name=""> 1, 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+                                                            <input type="checkbox" name=""> 2, 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            <input type="checkbox" name=""> 3, 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            <input type="checkbox" name=""> 1, 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            <input type="checkbox" name=""> 1, 4<br>
+                                                            <input type="checkbox" name=""> 2, 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            <input type="checkbox" name=""> 1, 2, 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            <input type="checkbox" name=""> 2, 3, 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            <input type="checkbox" name=""> 1, 2, 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            <input type="checkbox" name=""> 1, 3, 4 <br>
+                                                            <input type="checkbox" name=""> 1, 2, 3, 4
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr align="center">
+                                                      <td colspan="2" >
+                                                        <input type="submit" name="submit" value="SAVE" class="btn btn-outline-secondary btn-block text-center">
+                                                      </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="table-responsive m-b-40">
+                                        <table class="table table-borderless table-data3">
+                                            <thead>
+                                                <tr>
+                                                    <th>date</th>
+                                                    <th>type</th>
+                                                    <th>description</th>
+                                                    <th>status</th>
+                                                    <th>price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2018-09-29 05:57</td>
+                                                    <td>Mobile</td>
+                                                    <td>iPhone X 64Gb Grey</td>
+                                                    <td class="process">Processed</td>
+                                                    <td>$999.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-09-28 01:22</td>
+                                                    <td>Mobile</td>
+                                                    <td>Samsung S8 Black</td>
+                                                    <td class="process">Processed</td>
+                                                    <td>$756.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-09-27 02:12</td>
+                                                    <td>Game</td>
+                                                    <td>Game Console Controller</td>
+                                                    <td class="denied">Denied</td>
+                                                    <td>$22.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-09-26 23:06</td>
+                                                    <td>Mobile</td>
+                                                    <td>iPhone X 256Gb Black</td>
+                                                    <td class="denied">Denied</td>
+                                                    <td>$1199.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-09-25 19:03</td>
+                                                    <td>Accessories</td>
+                                                    <td>USB 3.0 Cable</td>
+                                                    <td class="process">Processed</td>
+                                                    <td>$10.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-09-29 05:57</td>
+                                                    <td>Accesories</td>
+                                                    <td>Smartwatch 4.0 LTE Wifi</td>
+                                                    <td class="denied">Denied</td>
+                                                    <td>$199.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-09-24 19:10</td>
+                                                    <td>Camera</td>
+                                                    <td>Camera C430W 4k</td>
+                                                    <td class="process">Processed</td>
+                                                    <td>$699.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2018-09-22 00:43</td>
+                                                    <td>Computer</td>
+                                                    <td>Macbook Pro Retina 2017</td>
+                                                    <td class="process">Processed</td>
+                                                    <td>$10.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

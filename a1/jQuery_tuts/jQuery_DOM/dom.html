@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style media="screen">
+    .myClass {
+      color: blue;
+      background: #fff;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Document Object Model</h1>
+    </header>
+    <div id="container">
+      <button type="button" id="btn1" name="button">Button 1</button>
+      <p class="para1">This is a first paragraph</p>
+      <p class="para2">This is another paragraph</p>
+      <input type="text" id="newItem" name="" value="">
+      <div id="myDiv">
+        <ul id="unlist">
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li id="item3">List Item 3</li>
+          <li id="item4">List Item 4</li>
+        </ul>
+      </div>
+      <a href="http://www.goggle.com">Google</a>
+
+      <ul id="mylist">
+
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script>
+        $(document).ready(function(){
+          // $('p.para2').css({background: 'red', color: '#fff'});
+          // $('p.para2').addClass('myClass');
+          // // $('p.para2').removeClass('myClass');
+          // $('#btn1').on('click',function(){
+          //   $('p.para1').toggleClass('myClass');
+          // });
+          //
+          // // $('#myDiv').text('Hello');
+          // $('#myDiv').html('<h2>Hello World</h2>');
+          // alert($('#myDiv').text());
+
+          // $('ul').append('<li>List Item 5</li>');
+          // $('ul').prepend('<li>List Item 0</li>');
+          // // $('#item3').appendTo('#item4');
+          // $('#item3').prependTo('#item4');
+
+          // $('ul').before('Hello');
+          // $('ul').after('World');
+          // $('ul').empty();
+          // $('ul').detach();
+
+          // $('a').attr('target','_blank');
+          // alert($('a').attr('href'));
+          //
+          // $('a').removeAttr('target');
+
+          // $('p').wrap('<h3>');
+          // $('body').wrapAll('<h1>');
+
+          $('#newItem').keyup(function(e){
+            var code = e.which;
+            if(code==13){
+              e.preventDefault();
+              $('ul').append('<li>'+e.target.value+'</li>');
+            }
+          });
+
+          var myfam = ['ajith', 'kamala', 'hrp'];
+          $.each(myfam, function(i,val){
+            $('#mylist').append('<li>'+val+'</li>');
+          });
+
+          var newArr = $('ul#unlist li').toArray();
+          $.each(newArr, function(i,val){
+            console.log(val.innerHTML);
+          });
+        });
+    </script>
+  </body>
+</html>

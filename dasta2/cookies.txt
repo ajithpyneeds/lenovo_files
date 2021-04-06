@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+dasta.in	TRUE	/	FALSE	1999999999	PHPSESSID	p4103373g131l2tm26oc8evv61
+

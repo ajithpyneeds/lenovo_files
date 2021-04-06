@@ -1,0 +1,47 @@
+/*Login CSS*/
+
+body {
+    background: #333;
+    color: #fff;
+}
+
+#home-section {
+    background: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 550px;
+}
+
+#home-section .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 550px;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* #home-section .home-inner {
+    padding-top: 20px;
+} */
+
+#home-section .container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#home-section .card-form {
+    opacity: 0.8;
+}
+
+#home-section .fas {
+    color: #008ed6;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Covid 19 Django Application</title>
+  <link rel="stylesheet" href="{% static 'corona/style.css' %}">
+</head>
+<body>
+  <h1 class="heading">Covid 19 India Data</h1>
+  <section>
+    <ul>
+      <div class="shadow">
+        <h3>{{ all }}</h3>
+        <li>All Cases</li>
+      </div>
+      <div class="shadow">
+        <h3>{{ recovered }}</h3>
+        <li>Recovered</li>
+      </div>
+      <div class="shadow">
+        <h3>{{ deaths }}</h3>
+        <li>Deaths</li>
+      </div>
+      <div class="shadow">
+        <h3>{{ new }}</h3>
+        <li>New Cases</li>
+      </div>
+      <div class="shadow">
+        <h3>{{ critical }}</h3>
+        <li>Critical Cases</li>
+      </div>
+      <div class="shadow">
+        <h3>{{ tests }}</h3>
+        <li>Total Test</li>
+      </div>
+    </ul>
+  </section>
+</body>
+</html>

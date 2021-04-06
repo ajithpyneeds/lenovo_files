@@ -1,0 +1,269 @@
+HTTrack3.49-2 launched on Tue, 16 Jun 2020 16:02:45 at http://dasta.in/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w http://dasta.in/ -O "/home/ajith/websites/dasta2" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:02:47	Warning: 	Note: due to dasta.in remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+16:07:07	Warning: 	Note: due to s.w.org remote robots.txt rules, links beginning with these path will be forbidden: /search, /support/rss, /archive/, /?filters (see in the options to disable this)
+16:07:07	Warning: 	Moved Permanently for s.w.org/
+16:07:07	Warning: 	File has moved from s.w.org/ to https://wordpress.org/
+16:07:07	Warning: 	Retry after error 500 (Internal Server Error) at link dasta.in/wp-content/themes/dasta/ (from dasta.in/)
+16:13:33	Warning: 	Retry after error 500 (Internal Server Error) at link dasta.in/wp-content/themes/dasta/ (from dasta.in/)
+16:13:34	Warning: 	Moved Permanently for dasta.in/?p=6
+16:13:34	Warning: 	File has moved from dasta.in/?p=6 to http://dasta.in/about/
+18:06:23	Warning: 	Moved Permanently for dasta.in/?p=6890
+18:06:23	Warning: 	File has moved from dasta.in/?p=6890 to http://dasta.in/the-apartment/
+18:08:09	Warning: 	Moved Permanently for dasta.in/?p=16
+18:08:09	Warning: 	File has moved from dasta.in/?p=16 to http://dasta.in/pricing/
+18:08:09	Warning: 	Moved Permanently for dasta.in/?p=4110
+18:08:09	Warning: 	File has moved from dasta.in/?p=4110 to http://dasta.in/faqs-about-water-management/
+18:08:17	Error: 	"Internal Server Error" (500) after 2 retries at link dasta.in/wp-content/themes/dasta/ (from dasta.in/)
+19:03:11	Warning: 	Moved Permanently for dasta.in/category/construction-update/page/1/
+19:03:11	Warning: 	File has moved from dasta.in/category/construction-update/page/1/ to http://dasta.in/category/construction-update/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=6150
+19:03:11	Warning: 	File has moved from dasta.in/?p=6150 to http://dasta.in/august-2017-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=6082
+19:03:11	Warning: 	File has moved from dasta.in/?p=6082 to http://dasta.in/july-2017-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=5964
+19:03:11	Warning: 	File has moved from dasta.in/?p=5964 to http://dasta.in/may-2017-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=5909
+19:03:11	Warning: 	File has moved from dasta.in/?p=5909 to http://dasta.in/april-2017-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=5857
+19:03:11	Warning: 	File has moved from dasta.in/?p=5857 to http://dasta.in/march-2017-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=5790
+19:03:11	Warning: 	File has moved from dasta.in/?p=5790 to http://dasta.in/february-2017-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=5714
+19:03:11	Warning: 	File has moved from dasta.in/?p=5714 to http://dasta.in/january-2017-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=5655
+19:03:11	Warning: 	File has moved from dasta.in/?p=5655 to http://dasta.in/november-2016-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=5614
+19:03:11	Warning: 	File has moved from dasta.in/?p=5614 to http://dasta.in/october-2016-report/
+19:03:11	Warning: 	Moved Permanently for dasta.in/?p=5560
+19:03:11	Warning: 	File has moved from dasta.in/?p=5560 to http://dasta.in/september-2016-report/
+19:28:29	Warning: 	Moved Permanently for dasta.in/?p=3140
+19:28:29	Warning: 	File has moved from dasta.in/?p=3140 to http://dasta.in/get-a-feel-of-the-apartment/
+19:28:29	Warning: 	Moved Permanently for dasta.in/?p=14
+19:28:29	Warning: 	File has moved from dasta.in/?p=14 to http://dasta.in/engineering/
+19:28:29	Warning: 	Moved Permanently for dasta.in/?p=8
+19:28:29	Warning: 	File has moved from dasta.in/?p=8 to http://dasta.in/news/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=5495
+19:28:35	Warning: 	File has moved from dasta.in/?p=5495 to http://dasta.in/july-2016-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=5421
+19:28:35	Warning: 	File has moved from dasta.in/?p=5421 to http://dasta.in/june-2016-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=5378
+19:28:35	Warning: 	File has moved from dasta.in/?p=5378 to http://dasta.in/may-2016-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=5335
+19:28:35	Warning: 	File has moved from dasta.in/?p=5335 to http://dasta.in/april-2016-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=5246
+19:28:35	Warning: 	File has moved from dasta.in/?p=5246 to http://dasta.in/march-2016-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=5187
+19:28:35	Warning: 	File has moved from dasta.in/?p=5187 to http://dasta.in/january-2016-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=5120
+19:28:35	Warning: 	File has moved from dasta.in/?p=5120 to http://dasta.in/dec-2015-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=5024
+19:28:35	Warning: 	File has moved from dasta.in/?p=5024 to http://dasta.in/oct-2015-report/
+19:28:35	Error: 	"Not Found" (404) at link dasta.in/sept-2015-report/ (from dasta.in/oct-2015-report/)
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=4842
+19:28:35	Warning: 	File has moved from dasta.in/?p=4842 to http://dasta.in/july-2015-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=4661
+19:28:35	Warning: 	File has moved from dasta.in/?p=4661 to http://dasta.in/june-2015-report-2/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=4129
+19:28:35	Warning: 	File has moved from dasta.in/?p=4129 to http://dasta.in/march-2015-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=3888
+19:28:35	Warning: 	File has moved from dasta.in/?p=3888 to http://dasta.in/feb-2015-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=3806
+19:28:35	Warning: 	File has moved from dasta.in/?p=3806 to http://dasta.in/jan-2015-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=3755
+19:28:35	Warning: 	File has moved from dasta.in/?p=3755 to http://dasta.in/dec-2014-report-2/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=3574
+19:28:35	Warning: 	File has moved from dasta.in/?p=3574 to http://dasta.in/8th-slab-update/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=3415
+19:28:35	Warning: 	File has moved from dasta.in/?p=3415 to http://dasta.in/nov-2014-report/
+19:28:35	Warning: 	Moved Permanently for dasta.in/?p=2787
+19:28:35	Warning: 	File has moved from dasta.in/?p=2787 to http://dasta.in/construction-update-oct-2014/
+19:28:35	Warning: 	Moved Permanently for dasta.in/news/page/1/
+19:28:35	Warning: 	File has moved from dasta.in/news/page/1/ to http://dasta.in/news/
+19:28:38	Warning: 	HTML file (52594 bytes) retransferred due to lack of cache: dasta.in/wp-json/
+19:28:39	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from dasta.in/)
+19:32:27	Warning: 	HTML file (792 bytes) retransferred due to lack of cache: dasta.in/about/feed/
+19:32:31	Warning: 	HTML file (0 bytes) retransferred due to lack of cache: dasta.in/wp-content/themes/dasta/
+19:32:32	Warning: 	Retry after error 500 (Internal Server Error) at link dasta.in/wp-content/themes/dasta/ (from dasta.in/)
+19:32:35	Warning: 	HTML file (258331 bytes) retransferred due to lack of cache: dasta.in/category/construction-update/feed/
+19:33:51	Warning: 	HTML file (796 bytes) retransferred due to lack of cache: dasta.in/pricing/feed/
+19:34:11	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): dasta.in/wp-content/themes/dasta/js/vendor/SheetJS/xlsx-core-v0.12.4.min.js
+19:34:43	Warning: 	HTML file (891 bytes) retransferred due to lack of cache: dasta.in/faqs-about-water-management/feed/
+19:35:06	Warning: 	HTML file (838 bytes) retransferred due to lack of cache: dasta.in/august-2017-report/feed/
+19:35:25	Warning: 	HTML file (0 bytes) retransferred due to lack of cache: dasta.in/wp-content/themes/dasta/
+19:35:26	Warning: 	Retry after error 500 (Internal Server Error) at link dasta.in/wp-content/themes/dasta/ (from dasta.in/)
+19:35:26	Warning: 	HTML file (741 bytes) retransferred due to lack of cache: dasta.in/?p=6
+19:35:27	Warning: 	Moved Permanently for dasta.in/?p=6
+19:35:27	Warning: 	File has moved from dasta.in/?p=6 to http://dasta.in/about/
+19:35:27	Warning: 	HTML file (19211 bytes) retransferred due to lack of cache: dasta.in/category/construction-update/page/2/
+19:35:31	Warning: 	HTML file (50377 bytes) retransferred due to lack of cache: dasta.in/august-2017-report/
+19:35:37	Warning: 	HTML file (44651 bytes) retransferred due to lack of cache: dasta.in/july-2017-report/
+19:35:43	Warning: 	HTML file (44224 bytes) retransferred due to lack of cache: dasta.in/may-2017-report/
+19:35:49	Warning: 	HTML file (39258 bytes) retransferred due to lack of cache: dasta.in/april-2017-report/
+19:35:51	Warning: 	HTML file (832 bytes) retransferred due to lack of cache: dasta.in/july-2017-report/feed/
+19:35:53	Warning: 	HTML file (34519 bytes) retransferred due to lack of cache: dasta.in/march-2017-report/
+19:35:57	Warning: 	HTML file (35430 bytes) retransferred due to lack of cache: dasta.in/february-2017-report/
+19:36:01	Warning: 	HTML file (32853 bytes) retransferred due to lack of cache: dasta.in/january-2017-report/
+19:36:03	Warning: 	HTML file (829 bytes) retransferred due to lack of cache: dasta.in/may-2017-report/feed/
+19:36:05	Warning: 	HTML file (29147 bytes) retransferred due to lack of cache: dasta.in/november-2016-report/
+19:36:09	Warning: 	HTML file (30589 bytes) retransferred due to lack of cache: dasta.in/october-2016-report/
+19:36:13	Warning: 	HTML file (29294 bytes) retransferred due to lack of cache: dasta.in/september-2016-report/
+19:36:15	Warning: 	HTML file (16940 bytes) retransferred due to lack of cache: dasta.in/category/construction-update/page/3/
+19:36:16	Warning: 	HTML file (14492 bytes) retransferred due to lack of cache: dasta.in/get-a-feel-of-the-apartment/
+19:36:18	Warning: 	HTML file (34394 bytes) retransferred due to lack of cache: dasta.in/engineering/?section=windows-doors
+19:36:18	Warning: 	HTML file (835 bytes) retransferred due to lack of cache: dasta.in/april-2017-report/feed/
+19:36:25	Warning: 	HTML file (835 bytes) retransferred due to lack of cache: dasta.in/march-2017-report/feed/
+19:36:47	Warning: 	HTML file (747 bytes) retransferred due to lack of cache: dasta.in/?p=16
+19:36:48	Warning: 	Moved Permanently for dasta.in/?p=16
+19:36:48	Warning: 	File has moved from dasta.in/?p=16 to http://dasta.in/pricing/
+19:36:51	Warning: 	HTML file (791 bytes) retransferred due to lack of cache: dasta.in/?p=4110
+19:36:52	Warning: 	Moved Permanently for dasta.in/?p=4110
+19:36:52	Warning: 	File has moved from dasta.in/?p=4110 to http://dasta.in/faqs-about-water-management/
+19:36:52	Warning: 	HTML file (118022 bytes) retransferred due to lack of cache: dasta.in/?section=water
+19:36:56	Warning: 	HTML file (844 bytes) retransferred due to lack of cache: dasta.in/february-2017-report/feed/
+19:37:04	Warning: 	HTML file (18517 bytes) retransferred due to lack of cache: dasta.in/news/
+19:37:04	Warning: 	HTML file (841 bytes) retransferred due to lack of cache: dasta.in/january-2017-report/feed/
+19:37:06	Warning: 	HTML file (23473 bytes) retransferred due to lack of cache: dasta.in/june-2016-report/
+19:37:08	Warning: 	HTML file (23755 bytes) retransferred due to lack of cache: dasta.in/may-2016-report/
+19:37:10	Warning: 	HTML file (24764 bytes) retransferred due to lack of cache: dasta.in/april-2016-report/
+19:37:12	Warning: 	HTML file (26492 bytes) retransferred due to lack of cache: dasta.in/march-2016-report/
+19:37:13	Warning: 	HTML file (844 bytes) retransferred due to lack of cache: dasta.in/november-2016-report/feed/
+19:37:14	Warning: 	HTML file (34696 bytes) retransferred due to lack of cache: dasta.in/january-2016-report/
+19:37:16	Warning: 	HTML file (31927 bytes) retransferred due to lack of cache: dasta.in/dec-2015-report/
+19:37:18	Warning: 	HTML file (26733 bytes) retransferred due to lack of cache: dasta.in/oct-2015-report/
+19:37:20	Warning: 	HTML file (41764 bytes) retransferred due to lack of cache: dasta.in/july-2015-report/
+19:37:22	Warning: 	HTML file (32013 bytes) retransferred due to lack of cache: dasta.in/june-2015-report-2/
+19:37:24	Warning: 	HTML file (805 bytes) retransferred due to lack of cache: dasta.in/category/construction-update/page/1/
+19:37:25	Warning: 	Moved Permanently for dasta.in/category/construction-update/page/1/
+19:37:25	Warning: 	File has moved from dasta.in/category/construction-update/page/1/ to http://dasta.in/category/construction-update/
+19:37:25	Warning: 	HTML file (773 bytes) retransferred due to lack of cache: dasta.in/?p=6150
+19:37:25	Warning: 	HTML file (841 bytes) retransferred due to lack of cache: dasta.in/october-2016-report/feed/
+19:37:26	Warning: 	Moved Permanently for dasta.in/?p=6150
+19:37:26	Warning: 	File has moved from dasta.in/?p=6150 to http://dasta.in/august-2017-report/
+19:37:26	Warning: 	HTML file (769 bytes) retransferred due to lack of cache: dasta.in/?p=6082
+19:37:27	Warning: 	Moved Permanently for dasta.in/?p=6082
+19:37:27	Warning: 	File has moved from dasta.in/?p=6082 to http://dasta.in/july-2017-report/
+19:37:27	Warning: 	HTML file (767 bytes) retransferred due to lack of cache: dasta.in/?p=5964
+19:37:28	Warning: 	Moved Permanently for dasta.in/?p=5964
+19:37:28	Warning: 	File has moved from dasta.in/?p=5964 to http://dasta.in/may-2017-report/
+19:37:28	Warning: 	HTML file (771 bytes) retransferred due to lack of cache: dasta.in/?p=5909
+19:37:28	Warning: 	Moved Permanently for dasta.in/?p=5909
+19:37:28	Warning: 	File has moved from dasta.in/?p=5909 to http://dasta.in/april-2017-report/
+19:37:28	Warning: 	HTML file (771 bytes) retransferred due to lack of cache: dasta.in/?p=5857
+19:37:30	Warning: 	Moved Permanently for dasta.in/?p=5857
+19:37:30	Warning: 	File has moved from dasta.in/?p=5857 to http://dasta.in/march-2017-report/
+19:37:30	Warning: 	HTML file (777 bytes) retransferred due to lack of cache: dasta.in/?p=5790
+19:37:31	Warning: 	Moved Permanently for dasta.in/?p=5790
+19:37:31	Warning: 	File has moved from dasta.in/?p=5790 to http://dasta.in/february-2017-report/
+19:37:31	Warning: 	HTML file (775 bytes) retransferred due to lack of cache: dasta.in/?p=5714
+19:37:32	Warning: 	Moved Permanently for dasta.in/?p=5714
+19:37:32	Warning: 	File has moved from dasta.in/?p=5714 to http://dasta.in/january-2017-report/
+19:37:32	Warning: 	HTML file (777 bytes) retransferred due to lack of cache: dasta.in/?p=5655
+19:37:33	Warning: 	Moved Permanently for dasta.in/?p=5655
+19:37:33	Warning: 	File has moved from dasta.in/?p=5655 to http://dasta.in/november-2016-report/
+19:37:33	Warning: 	HTML file (775 bytes) retransferred due to lack of cache: dasta.in/?p=5614
+19:37:33	Warning: 	HTML file (847 bytes) retransferred due to lack of cache: dasta.in/september-2016-report/feed/
+19:37:34	Warning: 	Moved Permanently for dasta.in/?p=5614
+19:37:34	Warning: 	File has moved from dasta.in/?p=5614 to http://dasta.in/october-2016-report/
+19:37:34	Warning: 	HTML file (779 bytes) retransferred due to lack of cache: dasta.in/?p=5560
+19:37:35	Warning: 	Moved Permanently for dasta.in/?p=5560
+19:37:35	Warning: 	File has moved from dasta.in/?p=5560 to http://dasta.in/september-2016-report/
+19:37:35	Warning: 	HTML file (29888 bytes) retransferred due to lack of cache: dasta.in/march-2015-report/
+19:37:37	Warning: 	HTML file (28517 bytes) retransferred due to lack of cache: dasta.in/feb-2015-report/
+19:37:38	Warning: 	HTML file (865 bytes) retransferred due to lack of cache: dasta.in/get-a-feel-of-the-apartment/feed/
+19:37:39	Warning: 	HTML file (24681 bytes) retransferred due to lack of cache: dasta.in/jan-2015-report/
+19:37:41	Warning: 	HTML file (26576 bytes) retransferred due to lack of cache: dasta.in/dec-2014-report-2/
+19:37:43	Warning: 	HTML file (14158 bytes) retransferred due to lack of cache: dasta.in/8th-slab-update/
+19:37:44	Warning: 	HTML file (18931 bytes) retransferred due to lack of cache: dasta.in/nov-2014-report/
+19:37:46	Warning: 	HTML file (18502 bytes) retransferred due to lack of cache: dasta.in/construction-update-oct-2014/
+19:37:46	Warning: 	HTML file (808 bytes) retransferred due to lack of cache: dasta.in/engineering/feed/
+19:37:48	Warning: 	HTML file (791 bytes) retransferred due to lack of cache: dasta.in/?p=3140
+19:37:49	Warning: 	Moved Permanently for dasta.in/?p=3140
+19:37:49	Warning: 	File has moved from dasta.in/?p=3140 to http://dasta.in/get-a-feel-of-the-apartment/
+19:37:49	Warning: 	HTML file (33032 bytes) retransferred due to lack of cache: dasta.in/engineering/
+19:37:50	Warning: 	HTML file (790 bytes) retransferred due to lack of cache: dasta.in/news/feed/
+19:37:51	Warning: 	HTML file (755 bytes) retransferred due to lack of cache: dasta.in/?p=14
+19:37:52	Warning: 	Moved Permanently for dasta.in/?p=14
+19:37:52	Warning: 	File has moved from dasta.in/?p=14 to http://dasta.in/engineering/
+19:37:52	Warning: 	HTML file (739 bytes) retransferred due to lack of cache: dasta.in/?p=8
+19:37:53	Warning: 	Moved Permanently for dasta.in/?p=8
+19:37:53	Warning: 	File has moved from dasta.in/?p=8 to http://dasta.in/news/
+19:37:53	Warning: 	HTML file (18904 bytes) retransferred due to lack of cache: dasta.in/news/page/2/
+19:37:53	Warning: 	HTML file (832 bytes) retransferred due to lack of cache: dasta.in/july-2016-report/feed/
+19:37:54	Warning: 	HTML file (769 bytes) retransferred due to lack of cache: dasta.in/?p=5495
+19:37:55	Warning: 	Moved Permanently for dasta.in/?p=5495
+19:37:55	Warning: 	File has moved from dasta.in/?p=5495 to http://dasta.in/july-2016-report/
+19:37:56	Warning: 	HTML file (769 bytes) retransferred due to lack of cache: dasta.in/?p=5421
+19:37:57	Warning: 	Moved Permanently for dasta.in/?p=5421
+19:37:57	Warning: 	File has moved from dasta.in/?p=5421 to http://dasta.in/june-2016-report/
+19:37:57	Warning: 	HTML file (767 bytes) retransferred due to lack of cache: dasta.in/?p=5378
+19:37:58	Warning: 	Moved Permanently for dasta.in/?p=5378
+19:37:58	Warning: 	File has moved from dasta.in/?p=5378 to http://dasta.in/may-2016-report/
+19:37:58	Warning: 	HTML file (771 bytes) retransferred due to lack of cache: dasta.in/?p=5335
+19:37:59	Warning: 	Moved Permanently for dasta.in/?p=5335
+19:37:59	Warning: 	File has moved from dasta.in/?p=5335 to http://dasta.in/april-2016-report/
+19:37:59	Warning: 	HTML file (771 bytes) retransferred due to lack of cache: dasta.in/?p=5246
+19:38:00	Warning: 	Moved Permanently for dasta.in/?p=5246
+19:38:00	Warning: 	File has moved from dasta.in/?p=5246 to http://dasta.in/march-2016-report/
+19:38:00	Warning: 	HTML file (775 bytes) retransferred due to lack of cache: dasta.in/?p=5187
+19:38:01	Warning: 	Moved Permanently for dasta.in/?p=5187
+19:38:01	Warning: 	File has moved from dasta.in/?p=5187 to http://dasta.in/january-2016-report/
+19:38:02	Error: 	"Not Found" (404) at link dasta.in/wp-content/uploads/2016/02/past-comparison.jpg (from dasta.in/january-2016-report/)
+19:38:02	Warning: 	HTML file (767 bytes) retransferred due to lack of cache: dasta.in/?p=5120
+19:38:03	Warning: 	Moved Permanently for dasta.in/?p=5120
+19:38:03	Warning: 	File has moved from dasta.in/?p=5120 to http://dasta.in/dec-2015-report/
+19:38:03	Warning: 	HTML file (767 bytes) retransferred due to lack of cache: dasta.in/?p=5024
+19:38:04	Warning: 	Moved Permanently for dasta.in/?p=5024
+19:38:04	Warning: 	File has moved from dasta.in/?p=5024 to http://dasta.in/oct-2015-report/
+19:38:04	Warning: 	HTML file (10448 bytes) retransferred due to lack of cache: dasta.in/sept-2015-report/
+19:38:05	Error: 	"Not Found" (404) at link dasta.in/sept-2015-report/ (from dasta.in/oct-2015-report/)
+19:38:05	Warning: 	HTML file (769 bytes) retransferred due to lack of cache: dasta.in/?p=4842
+19:38:06	Warning: 	Moved Permanently for dasta.in/?p=4842
+19:38:06	Warning: 	File has moved from dasta.in/?p=4842 to http://dasta.in/july-2015-report/
+19:38:06	Warning: 	HTML file (773 bytes) retransferred due to lack of cache: dasta.in/?p=4661
+19:38:06	Warning: 	Moved Permanently for dasta.in/?p=4661
+19:38:06	Warning: 	File has moved from dasta.in/?p=4661 to http://dasta.in/june-2015-report-2/
+19:38:06	Warning: 	HTML file (771 bytes) retransferred due to lack of cache: dasta.in/?p=4129
+19:38:08	Warning: 	Moved Permanently for dasta.in/?p=4129
+19:38:08	Warning: 	File has moved from dasta.in/?p=4129 to http://dasta.in/march-2015-report/
+19:38:08	Warning: 	HTML file (767 bytes) retransferred due to lack of cache: dasta.in/?p=3888
+19:38:09	Warning: 	Moved Permanently for dasta.in/?p=3888
+19:38:09	Warning: 	File has moved from dasta.in/?p=3888 to http://dasta.in/feb-2015-report/
+19:38:09	Warning: 	HTML file (767 bytes) retransferred due to lack of cache: dasta.in/?p=3806
+19:38:10	Warning: 	Moved Permanently for dasta.in/?p=3806
+19:38:10	Warning: 	File has moved from dasta.in/?p=3806 to http://dasta.in/jan-2015-report/
+19:38:10	Warning: 	HTML file (771 bytes) retransferred due to lack of cache: dasta.in/?p=3755
+19:38:11	Warning: 	Moved Permanently for dasta.in/?p=3755
+19:38:11	Warning: 	File has moved from dasta.in/?p=3755 to http://dasta.in/dec-2014-report-2/
+19:38:11	Warning: 	HTML file (767 bytes) retransferred due to lack of cache: dasta.in/?p=3574
+19:38:12	Warning: 	Moved Permanently for dasta.in/?p=3574
+19:38:12	Warning: 	File has moved from dasta.in/?p=3574 to http://dasta.in/8th-slab-update/
+19:38:12	Warning: 	HTML file (767 bytes) retransferred due to lack of cache: dasta.in/?p=3415
+19:38:13	Warning: 	Moved Permanently for dasta.in/?p=3415
+19:38:13	Warning: 	File has moved from dasta.in/?p=3415 to http://dasta.in/nov-2014-report/
+19:38:13	Warning: 	HTML file (793 bytes) retransferred due to lack of cache: dasta.in/?p=2787
+19:38:14	Warning: 	Moved Permanently for dasta.in/?p=2787
+19:38:14	Warning: 	File has moved from dasta.in/?p=2787 to http://dasta.in/construction-update-oct-2014/
+19:38:14	Warning: 	HTML file (757 bytes) retransferred due to lack of cache: dasta.in/news/page/1/
+19:38:15	Warning: 	Moved Permanently for dasta.in/news/page/1/
+19:38:15	Warning: 	File has moved from dasta.in/news/page/1/ to http://dasta.in/news/
+19:38:15	Error: 	"Not Found" (404) at link dasta.in/wp-content/themes/dasta/stylesheets/grabbing.png (from dasta.in/wp-content/themes/dasta/stylesheets/app.css?v=21)
+19:38:17	Error: 	"Not Found" (404) at link dasta.in/wp-content/themes/dasta/stylesheets/AjaxLoader.gif (from dasta.in/wp-content/themes/dasta/stylesheets/app.css?v=21)
+19:38:18	Warning: 	HTML file (0 bytes) retransferred due to lack of cache: dasta.in/wp-content/themes/dasta/
+19:38:19	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://use.typekit.net/af/491586/00000000000000003b9b1e2d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3
+19:38:20	Warning: 	Retry after error 500 (Internal Server Error) at link dasta.in/wp-content/themes/dasta/ (from dasta.in/)
+19:38:20	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://use.typekit.net/af/491586/00000000000000003b9b1e2d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3
+19:38:44	Warning: 	HTML file (0 bytes) retransferred due to lack of cache: dasta.in/wp-content/themes/dasta/
+19:38:45	Error: 	"Internal Server Error" (500) after 2 retries at link dasta.in/wp-content/themes/dasta/ (from dasta.in/)
+19:38:45	Error: 	"Not Found" (404) at link dasta.in/wp-content/themes/img/loadingbar.gif (from dasta.in/wp-content/themes/dasta/stylesheets/4_helper.css)
+19:38:46	Warning: 	HTML file (0 bytes) retransferred due to lack of cache: dasta.in/wp-content/themes/dasta/
+19:38:48	Error: 	"Internal Server Error" (500) after 2 retries at link dasta.in/wp-content/themes/dasta/ (from dasta.in/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 hours 36 minutes 3 seconds : 974 links scanned, 980 files written (290002494 bytes overall) [287969723 bytes received at 22214 bytes/sec], 3879067 bytes transferred using HTTP compression in 152 files, ratio 27%, 1.9 requests per connection
+(10 errors, 248 warnings, 0 messages)

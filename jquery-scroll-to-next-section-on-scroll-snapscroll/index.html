@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>snapScroll.js Example</title>
+
+    <!-- Just a font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/example.css">
+  </head>
+  <body>
+    <main>
+      <div class="height-100" data-snap-point>
+        An example of snapScroll.js, using a bounce animation.
+      </div>
+      <div class="height-30" data-snap-point>
+        It works on elements of any height...
+      </div>
+      <div class="height-30 width-50" data-snap-point>
+        ...or width.
+      </div>
+      <div class="height-40" data-snap-point>
+        Snapping to your chosen elements.
+      </div>
+      <div class="height-80" data-snap-point>
+        Easy peasy!
+      </div>
+    </main>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+
+    <!-- snapScroll JavaScript file -->
+    <script src="js/jquery.snapScroll.min.js" charset="utf-8"></script>
+
+    <!-- Additional easing file (optional) -->
+    <script src="js/jquery.easing.min.js" charset="utf-8"></script>
+
+    <!-- Your script -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('main').snapScroll({
+          arrowKeys: true,
+          duration: 900,
+          easing: 'easeOutBounce',
+          scrollBar: false,
+          onLeave: function (currentPoint, nextPoint) {
+            console.log('Leaving point ' + currentPoint + ', going to point ' + nextPoint + '.')
+          },
+          onArrive: function (prevPoint, currentPoint) {
+            console.log("I've arrived!")
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

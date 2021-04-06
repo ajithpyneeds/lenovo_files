@@ -1,0 +1,743 @@
+<!DOCTYPE js>
+<html>
+    <head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Noto+Sans|Noto+Sans+TC:300,400,500,700&amp;display=swap"/>
+      <title>Fueb - Home</title>
+      <meta name="description" content=""/>
+      <meta name="author" content="Admin"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+      <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500,700&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Barlow&amp;display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link href="./css/app.css" rel="stylesheet"></head>
+  <style type="text/css">
+    body {
+      overflow-x: hidden
+    }
+  </style>
+  <body class="bg-black">
+    <main class="js-home-page">
+      <div class="page-loader" style="width: 100%;height: 100%;position: fixed;background: black;z-index: 10000;left: 0;top: 0;"></div>
+      <div id="fullpage">
+        <header class="fb-header fb-header--black bg-animations">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <ul class="d-flex align-items-center justify-content-between mb-0">
+                  <li class="gsap-logo gsap-logo--white"><a href="index.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="90" height="32" viewBox="0 0 90 32">
+                        <g>
+                          <path d="M76.285 27.57c3.554 0 5.676-2.838 5.676-7.59 0-3.647-1.687-7.327-5.456-7.327-1.698 0-3.033.559-3.966 1.661-1.017 1.202-1.534 3.049-1.534 5.49v1.011c0 3.265 1.387 6.755 5.28 6.755m-27.852-9.983h9.358l-.088-.546c-.277-1.706-1.232-4.57-4.516-4.57-1.734 0-3.949.792-4.65 4.56zm-.227 3.939l.053.519c.388 3.741 1.968 5.483 4.974 5.483 2.217 0 3.81-1.01 4.37-2.774l.064-.2H64v-3.028zm-5.92 4.448v5.419h-7.008v-2.727l-1.475 1.73-.028.021C31.546 32 29.409 32 27.524 32c-2.18 0-4.085-.57-5.508-1.646-1.28-.967-2.122-2.326-2.373-3.826-.178-1.182-.214-2.576-.214-4.307V9.143h7.007v10.204c0 .725.044 2.61.18 3.808.316 2.64 1.724 3.925 4.306 3.925 2.646 0 4.356-2.293 4.356-5.842V9.143h7.008v5.559l.006-.014a11.193 11.193 0 0 1 2.155-3.15C46.71 9.224 49.874 8 53.595 8c3.677 0 6.738 1.294 8.853 3.743.61.706 1.129 1.508 1.552 2.372V0h7.005v12.023l.775-1.326.034-.03c1.715-1.53 4.491-2.444 7.427-2.444 6.015 0 9.902 4.46 9.902 11.36 0 3.825-1.103 7.026-3.19 9.257-1.905 2.038-4.571 3.16-7.506 3.16-1.474 0-4.229-.17-6.13-1.306l-.036-.022-1.276-1.407v2.12H64v-5.193C62.116 29.902 58.237 32 53.142 32c-3.464 0-6.41-1.015-8.516-2.936a9.92 9.92 0 0 1-2.334-3.227c-.542-1.182-.897-2.51-1.055-3.962.14 1.508.494 2.883 1.049 4.1zM21.714 1.143v5.303H6.925v7.927H19.31v5.303H6.925V32H0V1.143z"></path>
+                        </g>
+                      </svg></a></li>
+                  <li class="d-md-flex align-items-center d-none">
+                    <nav>
+                      <ul class="fb-mainnav fb-mainnav--white align-items-center d-sm-flex">
+                        <li><a class="fb-nav-link" href="javascript:void(0)">Stories</a></li>
+                        <li class="js-dropdown-menu menu-item"><a class="fb-nav-link" href="javascript:void(0)">Products<span class="menu-arrow ml-1"><img class="ml-2" src="./assets/icons/dropdown_arrow.svg" alt="dropdown_arrow"/></span></a>
+                          <div class="menu-list">
+                            <ul>
+                              <li><a href="#">Door Lock</a></li>
+                              <li><a href="#">Door Bell</a></li>
+                              <li><a href="#">Switches</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a class="fb-nav-link" href="forum-login.html">Community</a></li>
+                        <li><a class="fb-nav-link" href="partner-with-us.html">Partner with us</a></li>
+                      </ul>
+                    </nav>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <label class="menu-toggle__wrap js-navtoggler">
+                      <input type="checkbox"/>
+                      <div>
+                        <div class="menu-toggle__dots"><span></span><span></span></div>
+                        <svg>
+                          <use xlink:href="#path"></use>
+                        </svg>
+                        <svg>
+                          <use xlink:href="#path"></use>
+                        </svg>
+                      </div>
+                    </label>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                      <symbol id="path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+                        <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                      </symbol>
+                    </svg>
+                  </li>
+                </ul>
+                <!--Header menu-->
+                <nav class="menu full-screen-nav js-header-animate">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul class="menu-nav-list">
+                          <li class="menu-nav-list__item"><a class="menu-link" href="index.html">Home</a></li>
+                          <li class="menu-nav-list__item"><a class="menu-link" href="product.html">Products</a></li>
+                          <li class="menu-nav-list__item"><a class="menu-link" href="experience.html">Fueb's Experience</a></li>
+                          <li class="menu-nav-list__item"><a class="menu-link" href="customer-stories.html">Customer Stories</a></li>
+                          <li class="menu-nav-list__item"><a class="menu-link" href="forum-login.html">Community</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="menu-nav-list">
+                          <li class="menu-nav-list__item"><a class="menu-link" href="app.html">Fueb App</a></li>
+                          <li class="menu-nav-list__item"><a class="menu-link" href="about-us.html">About Us</a></li>
+                          <li class="menu-nav-list__item"><a class="menu-link" href="contact-us.html">Contact Us</a></li>
+                          <li class="menu-nav-list__item"><a class="menu-link" href="faq.html">FAQ</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="menu-nav-footer">
+                        <ul class="menu-nav-footer__left">
+                          <li class="menu-nav-footer-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                          <li class="menu-nav-footer-item"><a href="javascript:void(0);">Terms and conditions                </a></li>
+                        </ul>
+                        <ul class="fub-social-list pt-0">
+                          <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-twitter"></i></a></li>
+                          <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-facebook"></i></a></li>
+                          <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-instagram"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <svg class="text-gradient-value" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <lineargradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#6164F1;stop-opacity:1"></stop>
+              <stop offset="100%" style="stop-color:#FF6FD4;stop-opacity:1"></stop>
+            </lineargradient>
+          </svg>
+        </header>
+        <section class="section" id="hero">
+          <div class="swiper-container js-blog-swiper1 blog-swiper hght100 homepage-banner w-100">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container d-flex hght100 homepage-banner__item" data-slide="1">
+                  <div class="banner-image" style="background-image: url('assets/images/home/banner-slider.png')"></div>
+                  <div class="banner-content">
+                    <div class="banner-content__sub-title mb-2">Touch Magic </div>
+                    <h2 class="banner-content__heading mb-2"><span class="banner-highlight">Smarten</span><span class="banner-hcont">Your World</span></h2>
+                    <p class="banner-content__des">The one stop for all your home automation needs!          </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container d-flex hght100 homepage-banner__item" data-slide="2">
+                  <div class="banner-image" style="background-image: url('assets/images/home/banner-slider.png')"></div>
+                  <div class="banner-content">
+                    <div class="banner-content__sub-title mb-2">Touch Magic </div>
+                    <h2 class="banner-content__heading mb-2"><span class="banner-highlight">Smarten</span><span class="banner-hcont">Your World</span></h2>
+                    <p class="banner-content__des">The one stop for all your home automation needs!            </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container d-flex hght100 homepage-banner__item" data-slide="3">
+                  <div class="banner-image" style="background-image: url('assets/images/home/banner-slider.png')"></div>
+                  <div class="banner-content">
+                    <div class="banner-content__sub-title mb-2">Touch Magic </div>
+                    <h2 class="banner-content__heading mb-2"><span class="banner-highlight">Smarten</span><span class="banner-hcont">Your World</span></h2>
+                    <p class="banner-content__des">The one stop for all your home automation needs!   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination banner-swiper-pagination"></div>
+            <div class="swiper-custom-number-pagination d-flex"><span class="swiper-pagination-current"> </span><span class="swiper-pagination-total"> </span></div>
+          </div>
+        </section>
+        <section class="section bg-animations dark-section" id="armour">
+          <div class="container position-relative">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="bg-scale"><img class="armour-img" src="./assets/images/home/products/armour.png" alt="Armour Door Lock"/></div>
+                <h2 class="product-intro bg-expand"><span class="product-title">Armour</span><span class="d-block product-subtitle">Door Lock</span></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-10 col-md-7 col-lg-5 d-flex align-items-center product-left-info">
+                <div class="product-info">
+                  <h4 class="product-info__heading mr-4 mr-lg-5 text-white">Secure by design</h4>
+                  <p class="mb-2 my-md-4 fnt-md">Our rugged, tamper proof lock is engineered for strength and durability. Comes enabled with biometric and RFID based access control for advanced safety and convenience</p><a class="gradient-text gradient-link gsap-product-text" href="#" data-value="Learn more">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>Learn more</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section product-wrapper product-wrapper--secondary bg-animations12" id="two">
+          <div id="white-circle"></div>
+          <div class="container position-relative">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center product-right-info">
+                <div class="product-info product-info--secondary padding-rght5 headingmove-lr2">
+                  <h4 class="product-info__heading clr-secondary mr-4 mr-lg-5 gsap-product-text">Always on guard</h4>
+                  <p class="mb-2 my-md-4 fnt-md gsap-product-text">Wherever you are, keep a clear eye on who’s at the door through high definition video and two-way audio streams directly to your smartphone screen</p><a class="gradient-text gradient-link gsap-product-text" href="#" data-value="Learn more">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>Learn more</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="bg-scale-video-door"><img class="vibe-img" src="./assets/images/home/products/vibe-bell.png" alt="Video Bell product"/></div>
+                <h2 class="product-intro bg-second-img"><span class="product-title d-block">Vibe</span><span class="d-block product-subtitle">Video Door Bell</span></h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section product-wrapper product-wrapper--secondary bg-grey bg-animations" id="three">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="product">
+                  <h3 class="product__title gsap-product-title"><span class="d-block">Touch Magic</span><span class="prouct-sub gsap-product-sub">Switches</span></h3>
+                  <div class="product__view text-right gsap-product-img"><img class="img-fluid touchMagic-img" src="./assets/images/home/products/magic-small.png" alt="Touch Magic product"/></div>
+                </div>
+              </div>
+              <div class="col-11 col-md-6 col-lg-5 offset-lg-1 d-flex align-items-end pr-md-0 gsap-product-info">
+                <div class="product-info ml-3 ml-md-0">
+                  <h4 class="product-info__heading gsap-product-text">At your command</h4>
+                  <p class="mb-2 my-md-4 fnt-md gsap-product-text">Our touch panel switches let you intuitively control all appliances in your house and is designed to enhance the aesthetics of your house</p><a class="gradient-text gradient-link gsap-product-text" href="#" data-value="Learn more">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                      <text>Learn more</text>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="exp-timeline section position-absolute overflow-hidden">
+          <h2 class="exp-textbg"> <img src="assets/images/home/text-mask.svg" alt=""/></h2>
+        </section>
+        <section class="exp-timeline section bg-animations overflow-hidden" id="experienceProduct">
+          <div class="swiper-container exp-tl-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="exp-tl-item" data-slide="1" style="background-image: url('assets/images/home/timeline-img1.jpg')">
+                  <div class="container">
+                    <label class="exp-tl-item__desc">#FuebExperience</label>
+                    <h3 class="exp-tl-item__title mobile-content__heading">Checking Room Temprature</h3><a class="btn exp-tl-item__link" href="#"><span class="btn__gradient">Take Journey </span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="exp-tl-item" data-slide="2" style="background-image: url('assets/images/home/timeline-img2.jpg')">
+                  <div class="container">
+                    <label class="exp-tl-item__desc">#FuebExperience</label>
+                    <h3 class="exp-tl-item__title mobile-content__heading">Checking Room Temprature</h3><a class="btn exp-tl-item__link" href="#"><span class="btn__gradient">Take Journey </span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="exp-tl-item" data-slide="3" style="background-image: url('assets/images/home/timeline-img3.jpg')">
+                  <div class="container">
+                    <label class="exp-tl-item__desc">#FuebExperience</label>
+                    <h3 class="exp-tl-item__title mobile-content__heading">Checking Room Temprature</h3><a class="btn exp-tl-item__link" href="#"><span class="btn__gradient">Take Journey </span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="exp-tl-item" data-slide="4" style="background-image: url('assets/images/home/timeline-img4.jpg')">
+                  <div class="container">
+                    <label class="exp-tl-item__desc">#FuebExperience</label>
+                    <h3 class="exp-tl-item__title mobile-content__heading">Checking Room Temprature</h3><a class="btn exp-tl-item__link" href="#"><span class="btn__gradient">Take Journey </span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="exp-tl-item" data-slide="5" style="background-image: url('assets/images/home/timeline-img5.jpg')">
+                  <div class="container">
+                    <label class="exp-tl-item__desc">#FuebExperience</label>
+                    <h3 class="exp-tl-item__title mobile-content__heading">Checking Room Temprature</h3><a class="btn exp-tl-item__link" href="#"><span class="btn__gradient">Take Journey </span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="exp-tl-item" data-slide="6" style="background-image: url('assets/images/home/timeline-img3.jpg')">
+                  <div class="container">
+                    <label class="exp-tl-item__desc">#FuebExperience</label>
+                    <h3 class="exp-tl-item__title mobile-content__heading">Checking Room Temprature</h3><a class="btn exp-tl-item__link" href="#"><span class="btn__gradient">Take Journey </span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="exp-timeslider">
+            <div class="container">
+              <ul>
+                <li class="active"> <span>06:00 am</span></li>
+                <li> <span>08:00 am</span></li>
+                <li> <span>10:00 am </span></li>
+                <li> <span>12:00 pm </span></li>
+                <li> <span>06:00 am</span></li>
+                <li> <span>06:00 am</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section product-wrapper bg-animationsmobile" id="product-mobileapp">
+          <div class="container position-relative hght100">
+            <div class="row hght100">
+              <div class="col-lg-12 text-white mt-5 mt-md-0">
+                <div class="black-overlay"></div>
+                <div class="mobileapp w-100">
+                  <div class="mobileapp-slide">
+                    <div class="imgmovebottom" data-slide="1"><img src="./assets/images/mockup-black-1.gif" alt="Entertainment Mobile app"/></div>
+                  </div>
+                  <div class="mobileapp-slide">
+                    <div class="imgmovebottom" data-slide="2"><img src="./assets/images/mockup-black-2.gif" alt="Entertainment Mobile app"/></div>
+                  </div>
+                  <div class="mobileapp-slide">
+                    <div class="imgmovebottom" data-slide="3"><img src="./assets/images/mockup-black-3.gif" alt="Entertainment Mobile app"/></div>
+                  </div>
+                  <div class="mobileapp-slide">
+                    <div class="imgmovebottom" data-slide="4"><img src="./assets/images/mockup-black-4.gif" alt="Entertainment Mobile app"/></div>
+                  </div>
+                </div>
+                <div class="product-intro app-content text-center">
+                  <h3 class="product-intro__md">
+                    <div class="hide-text">Control everything</div>
+                  </h3>
+                  <h3 class="product-intro__md">
+                    <div class="hide-text">at a touch</div>
+                  </h3>
+                </div>
+              </div>
+              <div class="mobileapp-content">
+                <div class="swiper-container js-content-slider-wrapper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="mobile-content" data-slide="1">
+                        <h4 class="mobile-content__heading mb-md-4">Control everything at a touch</h4>
+                        <p class="fnt-md mobile-content__des">The Fueb app lets you manage all your devices through your smartphone </p>
+                        <div class="social-app-list">
+                          <p class="fnt-md mobile-content__des">Get Fueb App for Android & IOS2</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="mobile-content" data-slide="2">
+                        <h4 class="mobile-content__heading mb-md-4">Control everything at a touch</h4>
+                        <p class="fnt-md mobile-content__des">The Fueb app lets you manage all your devices through your smartphone </p>
+                        <div class="social-app-list">
+                          <p class="fnt-md mobile-content__des">Get Fueb App for Android & IOS3</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="mobile-content" data-slide="3">
+                        <h4 class="mobile-content__heading mb-md-4">Control everything at a touch</h4>
+                        <p class="fnt-md mobile-content__des">The Fueb app lets you manage all your devices through your smartphone </p>
+                        <div class="social-app-list">
+                          <p class="fnt-md mobile-content__des">Get Fueb App for Android & IOS4</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="mobile-content" data-slide="4">
+                        <h4 class="mobile-content__heading mb-md-4">Control everything at a touch</h4>
+                        <p class="fnt-md mobile-content__des">The Fueb app lets you manage all your devices through your smartphone </p>
+                        <div class="social-app-list">
+                          <p class="fnt-md mobile-content__des">Get Fueb App for Android & IOS5</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section-our-partners mb-5">
+          <div class="container">
+            <div class="row section-padding6 mt-md-0">
+              <div class="col-md-6 pt-5 tab-wrap-contain mt-md-0">
+                <h3 class="section-heading txt-white our-parter-headding">Our partners</h3>
+                <div class="tab-wrap">
+                  <div class="tab-info active-tab" data-id="xx1">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx2">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx3">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx4">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx5">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx6">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies…</div>
+                  <div class="tab-info" data-id="xx7">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx8">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx9">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx10">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx11">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx12">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx13">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                  <div class="tab-info" data-id="xx14">
+                     Here is the list for the top 5 apps for automation by apple awards,this list also contains some indian companies….</div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="icon-scrolling">
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx1"> <img class="img-fluid sroll-icom-left" src="./assets/images/home/logo.svg" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx2"><img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx3"><img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx4"><img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx5"><img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx6"><img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx7"><img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx8"><img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx9"><img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx10"> <img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx11"> <img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx12"> <img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx13"> <img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx14"> <img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx7"> <img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx8"> <img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx9"> <img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx10"> <img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx11"> <img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx12"> <img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                  <div class="d-flex justify-content-between scroll-icon-item scroll-wrp">
+                    <div class="sroll-icom" data-id="xx13"> <img class="img-fluid sroll-icom-left" src="./assets/images/home/our-part1.png" alt="our-part1"/></div>
+                    <div class="sroll-icom" data-id="xx14"> <img class="img-fluid sroll-icom-right" src="./assets/images/home/our-part2.png" alt="our-part2"/></div>
+                  </div>
+                </div>
+                <div class="pagination-our"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section bg-white section-customerSty pt-md-0" id="customer-stories">
+          <div class="container position-relative customer-stories-container">
+            <div class="row">
+              <div class="col-12 text-center mb-3 mb-lg-4">
+                <h3 class="section-heading">Customer Stories</h3>
+                <p class="fnt-md section-subHeading txt-des">Find out how we have helped these wonderful people simplify and enhance their lives</p>
+              </div>
+            </div>
+            <div class="customerStory-slider swiper-container js-testimonial-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="row cust-slide">
+                    <div class="col col-md-7">
+                      <div class="custImg-block" style="background-image: url('assets/images/home/customers/customer-1.png')"></div><a class="watch-story" href="#"><img src="./assets/icons/Play_Button.png" alt="Play Button"/><span>Watch Now</span></a>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 offset-md-0 d-flex align-items-center">
+                      <div class="custContent">
+                        <div class="custTxt-block">
+                          <h3 class="custquoteText">Anil’s always on the move. See how Fueb helps him keep track of things while he’s away</h3><a class="custquoteLink gradient-text gradient-link fnt-sm mt-2 mx-auto" href="#" data-value="See Anil's Story">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <text>See Anil's Story</text>
+                            </svg></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="row cust-slide">
+                    <div class="col col-md-7">
+                      <div class="custImg-block" style="background-image: url('assets/images/home/customers/customer-1.png')"></div><a class="watch-story" href="#"><img src="./assets/icons/Play_Button.png" alt="Play Button"/><span>Watch Now</span></a>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 offset-md-0 d-flex align-items-center">
+                      <div class="custContent">
+                        <div class="custTxt-block">
+                          <h3 class="custquoteText">Anil’s always on the move. See how Fueb helps him keep track of things while he’s away</h3><a class="custquoteLink gradient-text gradient-link fnt-sm mt-2 mx-auto" href="#" data-value="See Anil's Story">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <text>See Anil's Story</text>
+                            </svg></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="row cust-slide">
+                    <div class="col col-md-7">
+                      <div class="custImg-block" style="background-image: url('assets/images/home/customers/customer-1.png')"></div><a class="watch-story" href="#"><img src="./assets/icons/Play_Button.png" alt="Play Button"/><span>Watch Now</span></a>
+                    </div>
+                    <div class="col-10 offset-1 col-md-5 offset-md-0 d-flex align-items-center">
+                      <div class="custContent">
+                        <div class="custTxt-block">
+                          <h3 class="custquoteText">Anil’s always on the move. See how Fueb helps him keep track of things while he’s away</h3><a class="custquoteLink gradient-text gradient-link fnt-sm mt-2 mx-auto" href="#" data-value="See Anil's Story">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <text>See Anil's Story</text>
+                            </svg></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination-->
+            <div class="swiper-navigation">
+              <div class="nav nav-prev">
+                <svg class="border-circle">
+                  <circle cx="54" cy="54" r="45" stroke="#000000" stroke-width="3" fill="none"></circle>
+                </svg>
+              </div>
+              <div class="nav nav-next">
+                <svg class="border-circle">
+                  <circle cx="54" cy="54" r="45" stroke="#000000" stroke-width="3" fill="none"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="cust-stories"><a class="gradient-text gradient-link fnt-sm mt-2 mx-auto" href="#" data-value="See All Stories">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <text>See All Stories</text>
+                </svg></a></div>
+          </div>
+        </section>
+        <section class="section section-blogs bg-grey" id="blog">
+          <div class="container">
+            <div class="row my-3 my-lg-4">
+              <div class="col-12 d-flex justify-content-between flex-column flex-md-row align-items-md-center">
+                <h3 class="section-heading">Most Popular Blogs</h3>
+              </div>
+            </div>
+          </div>
+          <div class="container position-relative">
+            <div class="blog-slider swiper-container js-blog-swiper blog-swiper">
+              <div class="swiper-wrapper populr-blogs">
+                <div class="swiper-slide d-flex">
+                  <div class="blog-card d-flex flex-column">
+                    <div class="blog-card__view"><img class="img-fluid brdaius5 brdaius5__top blog-card__height" src="./assets/images/blog/blog3.png" alt="Blog card"/></div>
+                    <div class="blog-card__content"><span class="blog-patch blog-patch--gray mb-3">safety tips</span>
+                      <h4 class="h4 blog-card__heading">List Top 5 Apps for home automation</h4>
+                      <p>Here is the list for the top 5 apps for automation by apple awards…</p><a class="gradient-text gradient-link mt-2 mt-md-3 ml-0" href="#" data-value="Read More">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <text>Read More</text>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide d-flex">
+                  <div class="blog-card d-flex flex-column">
+                    <div class="blog-card__view"><img class="img-fluid brdaius5 brdaius5__top blog-card__height" src="./assets/images/blog/blog3.png" alt="Blog card"/></div>
+                    <div class="blog-card__content"><span class="blog-patch blog-patch--gray mb-3">safety tips</span>
+                      <h4 class="h4 blog-card__heading">List Top 5 Apps for home automation</h4>
+                      <p>Here is the list for the top 5 apps for automation by apple awards…</p><a class="gradient-text gradient-link mt-2 mt-md-3 ml-0" href="#" data-value="Read More">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <text>Read More</text>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide d-flex">
+                  <div class="blog-card d-flex flex-column">
+                    <div class="blog-card__view"><img class="img-fluid brdaius5 brdaius5__top blog-card__height" src="./assets/images/blog/blog3.png" alt="Blog card"/></div>
+                    <div class="blog-card__content"><span class="blog-patch blog-patch--gray mb-3">safety tips</span>
+                      <h4 class="h4 blog-card__heading">List Top 5 Apps for home automation</h4>
+                      <p>Here is the list for the top 5 apps for automation by apple awards…</p><a class="gradient-text gradient-link mt-2 mt-md-3 ml-0" href="#" data-value="Read More">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <text>Read More</text>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide d-flex">
+                  <div class="blog-card d-flex flex-column">
+                    <div class="blog-card__view"><img class="img-fluid brdaius5 brdaius5__top blog-card__height" src="./assets/images/blog/blog3.png" alt="Blog card"/></div>
+                    <div class="blog-card__content"><span class="blog-patch blog-patch--gray mb-3">safety tips</span>
+                      <h4 class="h4 blog-card__heading">List Top 5 Apps for home automation</h4>
+                      <p>Here is the list for the top 5 apps for automation by apple awards…</p><a class="gradient-text gradient-link mt-2 mt-md-3 ml-0" href="#" data-value="Read More">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <text>Read More</text>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide d-flex">
+                  <div class="blog-card d-flex flex-column">
+                    <div class="blog-card__view"><img class="img-fluid brdaius5 brdaius5__top blog-card__height" src="./assets/images/blog/blog3.png" alt="Blog card"/></div>
+                    <div class="blog-card__content"><span class="blog-patch blog-patch--gray mb-3">safety tips</span>
+                      <h4 class="h4 blog-card__heading">List Top 5 Apps for home automation</h4>
+                      <p>Here is the list for the top 5 apps for automation by apple awards…</p><a class="gradient-text gradient-link mt-2 mt-md-3 ml-0" href="#" data-value="Read More">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <text>Read More</text>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide d-flex">
+                  <div class="blog-card d-flex flex-column">
+                    <div class="blog-card__view"><img class="img-fluid brdaius5 brdaius5__top blog-card__height" src="./assets/images/blog/blog3.png" alt="Blog card"/></div>
+                    <div class="blog-card__content"><span class="blog-patch blog-patch--gray mb-3">safety tips</span>
+                      <h4 class="h4 blog-card__heading">List Top 5 Apps for home automation</h4>
+                      <p>Here is the list for the top 5 apps for automation by apple awards…</p><a class="gradient-text gradient-link mt-2 mt-md-3 ml-0" href="#" data-value="Read More">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <text>Read More</text>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide d-flex">
+                  <div class="blog-card d-flex flex-column">
+                    <div class="blog-card__view"><img class="img-fluid brdaius5 brdaius5__top blog-card__height" src="./assets/images/blog/blog3.png" alt="Blog card"/></div>
+                    <div class="blog-card__content"><span class="blog-patch blog-patch--gray mb-3">safety tips</span>
+                      <h4 class="h4 blog-card__heading">List Top 5 Apps for home automation</h4>
+                      <p>Here is the list for the top 5 apps for automation by apple awards…</p><a class="gradient-text gradient-link mt-2 mt-md-3 ml-0" href="#" data-value="Read More">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <text>Read More</text>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide d-flex">
+                  <div class="blog-card d-flex flex-column">
+                    <div class="blog-card__view"><img class="img-fluid brdaius5 brdaius5__top blog-card__height" src="./assets/images/blog/blog3.png" alt="Blog card"/></div>
+                    <div class="blog-card__content"><span class="blog-patch blog-patch--gray mb-3">safety tips</span>
+                      <h4 class="h4 blog-card__heading">List Top 5 Apps for home automation</h4>
+                      <p>Here is the list for the top 5 apps for automation by apple awards…</p><a class="gradient-text gradient-link mt-2 mt-md-3 ml-0" href="#" data-value="Read More">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <text>Read More</text>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination-->
+            <div class="swiper-navigation populr-navigation">
+              <div class="nav nav-prev">
+                <svg class="border-circle">
+                  <circle cx="54" cy="54" r="45" stroke="#000000" stroke-width="3" fill="none"></circle>
+                </svg>
+              </div>
+              <div class="nav nav-next">
+                <svg class="border-circle">
+                  <circle cx="54" cy="54" r="45" stroke="#000000" stroke-width="3" fill="none"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="allBlogs text-center"><a class="gradient-text gradient-link fnt-sm mx-auto" href="#" data-value="See all">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <text>See all</text>
+                </svg></a></div>
+          </div>
+        </section>
+        <section class="section-become-dealer section bg-animationsrandom" id="becomedealer" style="background-image: url('./assets/images/home/become-dealer.png');">
+          <div class="bg-layer-move"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center text-white">
+                <h5 class="card-title section-heading txt-white gsap-text-animate">Get Smart!</h5>
+                <p class="fnt-md mt-md-3 mx-md-5 gsap-text-animate">We are looking for dealers and partners with an eye on the future. Find out how we can work together!</p><a class="mt-4 btn gsap-text-animate" href="javascript:void(0);"><span class="btn__gradient">Join us</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="section fub-footer bg-animations bg-white bg-animationsfooter dark-section" id="footer">
+          <div class="footer-bg"></div>
+          <div class="container">
+            <div class="row fub-footer__pb6 pt-5 pt-md-0">
+              <div class="col-md-5 col-lg-4 mb-3 mb-md-0 stagged-list">
+                <h3 class="section-heading txt-white mb-md-4"> Stay in touch!</h3>
+                <p class="fub-footer__des">Leave us your details for all the latest updates from us.</p>
+              </div>
+              <div class="col-md-7 col-lg-8 d-flex align-items-end justify-content-end">
+                <form class="join-form form-input-white mt-0 mr-md-0 footer-form-mb stagged-list" autocomplete="off">
+                  <div class="form-group mb-0">
+                    <input class="form-control input-type newslttr-input" id="email" type="text" required=""/>
+                    <label class="form-control-placeholder" for="email">Email ID</label>
+                  </div>
+                  <button class="btn stagged-list mt-0 ml-3 ml-lg-4" type="submit"><span class="btn__gradient">Subscribe</span></button>
+                </form>
+              </div>
+            </div>
+            <hr class="stagged-list horizontal-row"/>
+            <div class="row footer-nav-info">
+              <div class="col-md-4 stagged-list mb-3 mb-md-0"><img class="mb-3 footer-logo" src="assets/images/white-logo.png" alt="white logo"/>
+                <p class="fub-footer__des">We aim to simplify home automation by creating a range of luxurious, utilitarian products to enhance your everyday life.</p>
+              </div>
+              <div class="col-6 col-md-2 mb-2 mb-md-0 stagged-footer stagged-list">
+                <h6 class="fub-footer__heading mb-0 mb-md-2">Products</h6>
+                <ul class="fub-footer-list">
+                  <li class="fub-footer-list__item"><a href="product.html">Armour Smart Lock</a></li>
+                  <li class="fub-footer-list__item"><a href="product-vibe-bell.html">Vibe Door Bell</a></li>
+                  <li class="fub-footer-list__item"><a href="javascript:void(0);">Touch Magic</a></li>
+                  <li class="fub-footer-list__item"><a href="product-switch.html">Switches</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2 mb-2 mb-md-0 stagged-footer stagged-list">
+                <h6 class="fub-footer__heading mb-0 mb-md-2">Fueb</h6>
+                <ul class="fub-footer-list">
+                  <li class="fub-footer-list__item"><a href="about-us.html">About us</a></li>
+                  <li class="fub-footer-list__item"><a href="partner-with-us.html">Partners</a></li>
+                  <li class="fub-footer-list__item"><a href="javascript:void(0);">News & Events</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2 stagged-footer stagged-list">
+                <h6 class="fub-footer__heading mb-0 mb-md-2">Support</h6>
+                <ul class="fub-footer-list">
+                  <li class="fub-footer-list__item"><a href="javascript:void(0);">Community</a></li>
+                  <li class="fub-footer-list__item"><a href="contact-us.html">Contact Us</a></li>
+                  <li class="fub-footer-list__item"><a href="blog.html">Blog</a></li>
+                  <li class="fub-footer-list__item"><a href="faq.html">FAQ</a></li>
+                  <li class="fub-footer-list__item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2 stagged-footer stagged-list">
+                <h6 class="fub-footer__heading mb-0 mb-md-2">Social Media</h6>
+                <ul class="fub-social-list">
+                  <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-twitter"></i></a></li>
+                  <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-facebook"></i></a></li>
+                  <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Old-files-->
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script><script type="text/javascript" src="./js/vendor.js"></script></body>
+</html>

@@ -1,0 +1,12 @@
+.first-class, .third-class {
+  color: #f00;
+  font-family: sans-serif;
+  text-decoration: underline; }
+
+.second-class, .third-class {
+  background-color: #fff; }
+
+.third-class {
+  border-color: #ccc; }
+
+/*# sourceMappingURL=output.css.map */

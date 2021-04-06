@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Creating My ChartJS</title>
+</head>
+<body>
+  <div class="container">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+
+    let myFirstChart = new Chart(myChart, {
+      type: 'bar',//'pie', 'horizontalBar', 'line', 'doughnut', 'radar', 'polarArea'
+      //type: 'pie',
+      //type: 'horizontalBar',
+      //type: 'line',
+      //type: 'doughnut',
+      //type: 'radar',
+      //type: 'polarArea',
+      data: {
+        labels:['Bangalore', 'Mysore', 'Tumkur', 'Hassan', 'Chikkamagaluru', 'Shimogha'],
+        datasets:[{
+          label:'Population',
+          data:[
+            20197352,
+            8472331,
+            7384612,
+            7014369,
+            6285453,
+            6123744
+          ],
+        backgroundColor: ['green','red','yellow','blue','gray','orange'],
+        borderWidth: 1,
+        borderColor: '#000',
+        hoverBorderWidth: 3,
+        hoverBorderColor: '#000',
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Largest cities in Karnataka',
+          fontSize: 25,
+        },
+        legend: {
+          display: true,
+          // position: 'left',
+          labels: {
+            fontColor: 'red'
+          }
+        },
+        layout: {
+          padding:{
+            left: 50,
+          }
+        },
+        tooltips:{
+          enabled: true
+        }
+      }
+    });
+  </script>
+</body>
+</html>

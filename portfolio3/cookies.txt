@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+useplink.com	TRUE	/	FALSE	1999999999	plink	4hb5ciujjvhubjrnfcvbk67gn1
+useplink.com	TRUE	/	FALSE	1999999999	SameSite	lax
+useplink.com	TRUE	/	FALSE	1999999999	plink_locale	nl
+useplink.com	TRUE	/	FALSE	1999999999	samesite	lax
+

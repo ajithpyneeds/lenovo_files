@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #d9d9d9;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #c4c4c4;
+}
+
+.navbar .items {
+  position: absolute;
+  list-style: none;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #540c1f;
+}

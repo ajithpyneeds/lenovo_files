@@ -1,0 +1,48 @@
+@mixin translateX {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.mix1 {
+  @include translateX;
+}
+
+.mix2 {
+  @include translateX;
+}
+
+@mixin angle($val) {
+  -webkit-transform: skew($val);
+  -moz-transform: skew($val);
+  -ms-transform: skew($val);
+  -o-transform: skew($val);
+  transform: skew($val);
+}
+
+.mix3 {
+  @include angle(20);
+}
+
+.mix4 {
+  @include angle(30);
+}
+
+//default mixin value
+@mixin angle($val: 50deg) {
+  -webkit-transform: skew($val);
+  -moz-transform: skew($val);
+  -ms-transform: skew($val);
+  -o-transform: skew($val);
+  transform: skew($val);
+}
+
+.mix5 {
+  @include angle;
+}
+
+.mix6 {
+  @include angle(40deg);
+}

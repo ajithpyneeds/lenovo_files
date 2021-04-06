@@ -1,0 +1,503 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Favicons -->
+    <link href="{% static 'images/favicon.ico' %}" rel="icon">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/6aa2e502bb.js" crossorigin="anonymous"></script>
+
+    <!-- Title Page-->
+    <title>NxMD4W</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="{% static '/css/font-face.css' %}" rel="stylesheet" media="all">
+    <link href="{% static '/vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static '/vendor/font-awesome-5/css/fontawesome-all.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static '/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="{% static '/vendor/bootstrap-4.1/bootstrap.min.css' %}" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <!-- <link rel="stylesheet" type="text/css" href="{% static '/vendor/animsition/css/animsition.min.css' %}"> -->
+    <!-- <link href="{% static '/vendor/animsition/animsition.min.css' %}" rel="stylesheet" media="all"> -->
+    <link href="{% static '/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static '/vendor/wow/animate.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static '/vendor/slick/slick.css' %}" rel="stylesheet" media="all">
+    <link href="{% static '/vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static '/vendor/perfect-scrollbar/perfect-scrollbar.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static '/css/theme.css' %}" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+
+
+  <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="{% url 'ipsettings' %}">
+                            <img class="mb-2" src="{% static 'images/logo.png' %}" alt="Pegasus"/>
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="fab fa-audible"></i>Controller Info</a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="ipsettings.html">IP Setting</a>
+                        </li>
+                        <li>
+                            <a href="parameters.html">Parameters</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="far fa-address-book"></i>Door Info</a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="door1.html">Door 1</a>
+                        </li>
+                        <li>
+                            <a href="door2.html">Door 2</a>
+                        </li>
+                        <li>
+                            <a href="door3.html">Door 3</a>
+                        </li>
+                        <li>
+                            <a href="door4.html">Door 4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="fas fa-server"></i>Remote DB</a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="cloud.html">Cloud</a>
+                        </li>
+                        <li>
+                            <a href="mssql.html">MS SQL</a>
+                        </li>
+                        <li>
+                            <a href="mysql.html">MY SQL</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="holiday.html">
+                      <i class="far fa-calendar-alt"></i>Holiday</a>
+                </li>
+                <li>
+                    <a href="timezone.html">
+                      <i class="far fa-calendar-plus"></i>Time Zone</a>
+                </li>
+                <li>
+                    <a href="enrollment.html">
+                        <i class="fas fa-id-card"></i>Enrollment</a>
+                </li>
+                <li>
+                    <a href="usertimezone.html">
+                       <i class="fas fa-users"></i>User Timezone</a>
+                </li>
+                <li>
+                    <a href="general.html">
+                        <i class="far fa-calendar-minus"></i>General</a>
+                </li>
+                <li>
+                    <a href="emergency.html">
+                        <i class="fas fa-lock-open"></i>Emergency</a>
+                </li>
+                <li>
+                    <a href="transaction.html">
+                        <i class="fas fa-briefcase"></i>Transaction</a>
+                </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+
+
+
+<!-- MENU SIDEBAR-->
+
+        <div class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="{% url 'ipsettings' %}">
+                    <img src="{% static '/images/logo.png' %}" alt="Pegasus" />
+                </a>
+            </div>
+            <div class="container text-secondary" id="accordion">
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <p class="panel-title">
+                      <a class="dropdown-toggle" data-toggle="collapse" href="#collapse1"><i class="fab fa-audible"></i>&nbsp; &nbsp; Controller Info</a>
+                    </p>
+                  </div>
+                    <div id="collapse1" class="collapse pl-4" data-parent="#accordion">
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'ipsettings' %}">IP Setting</a>
+                      </li>
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'parameters' %}">Parameters</a>
+                      </li>
+                    </div>
+                </div>
+              </div>
+
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <p class="panel-title">
+                      <a class="dropdown-toggle" data-toggle="collapse" href="#collapse2"><i class="far fa-address-book"></i>&nbsp; &nbsp; &nbsp; Door Info</a>
+                    </p>
+                  </div>
+                    <div id="collapse2" class="collapse pl-4" data-parent="#accordion">
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'door1' %}">Door 1</a>
+                      </li>
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'door2' %}">Door 2</a>
+                      </li>
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'door3' %}">Door 3</a>
+                      </li>
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'door4' %}">Door 4</a>
+                      </li>
+                    </div>
+                </div>
+              </div>
+
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <p class="panel-title">
+                      <a class="dropdown-toggle" data-toggle="collapse" href="#collapse3"><i class="fas fa-server"></i>&nbsp; &nbsp; &nbsp; Remote DB</a>
+                    </p>
+                  </div>
+                    <div id="collapse3" class="collapse pl-4" data-parent="#accordion">
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'cloud' %}">Cloud</a>
+                      </li>
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'mssql' %}">MS SQL</a>
+                      </li>
+                      <li class="list-unstyled pl-4 pt-2">
+                        <a href="{% url 'mysql' %}">MySQL</a>
+                      </li>
+                    </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <p class="panel-title">
+                    <a href="{% url 'holiday' %}"><i class="far fa-calendar-alt"></i>&nbsp; &nbsp; &nbsp; Holiday</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <p class="panel-title">
+                    <a href="{% url 'timezone' %}"><i class="far fa-calendar-plus"></i>&nbsp; &nbsp; &nbsp; Time Zone</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <p class="panel-title">
+                    <a href="{% url 'enrollment' %}"><i class="fas fa-id-card"></i>&nbsp; &nbsp; &nbsp; Enrollment</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <p class="panel-title">
+                    <a href="{% url 'usertimezone' %}"><i class="fas fa-users"></i>&nbsp; &nbsp; &nbsp; User Time Zone</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <p class="panel-title">
+                    <a href="{% url 'general' %}"><i class="far fa-calendar-minus"></i>&nbsp; &nbsp; &nbsp; General</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <p class="panel-title">
+                    <a href="{% url 'emergency' %}"><i class="fas fa-lock-open"></i>&nbsp; &nbsp; &nbsp; Emergency</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <p class="panel-title">
+                    <a href="{% url 'transaction' %}"><i class="fas fa-briefcase"></i>&nbsp; &nbsp; &nbsp; Transaction</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <div class="display-2 text-center">
+                              <h1 class="text-secondary">NXMD4W</h1>
+                              <h4 class="text-secondary">Next Generation 4 Door IOT Controller</h4>
+                            </div>
+
+                            <!-- <div class="header-button">
+                                <div class="noti-wrap">
+
+                                </div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="{% static '/images/icon/avatar-01.jpg' %}" alt="John Doe" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">example</a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="{% static '/images/icon/avatar-01.jpg' %}" alt="John Doe" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">example</a>
+                                                    </h5>
+                                                    <span class="email">example.com</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="account-dropdown__footer">
+                                                <a href="#">
+                                                    <i class="{% url 'logout' %}"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="account-wrap">
+                                  <div class="account-item clearfix js-item-menu">
+                                    <div class="image mt-2">
+                                      <img src="{% static '/images/icon/avatar-01.jpg' %}" alt="{{ user.username }}" />
+                                      <span class="glyphicon glyphicon-chevron-down"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </button>
+
+                              <ul class="dropdown-menu pl-2">
+                                <li>{{ user.username }}</li>
+                                <li>
+                                  <a href="{% url 'edit_profile' %}">Edit Profile</a>
+                                </li>
+                                <li>
+                                  <a href="{% url 'change_password' %}">Change Password</a>
+                                </li>
+                                <!-- <li class="dropdown-header">Member name</li> -->
+                                <li>
+                                  <a href="{% url 'logout' %}">Logout</a>
+                                </li>
+                              </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- END HEADER DESKTOP -->
+
+            <!-- MAIN CONTENT-->
+            {% block content %}
+
+            {% endblock %}
+
+        </div>
+
+    <!-- Footer -->
+
+    <div id="main-footer" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center text-light py-4">
+                    <p>&copy;
+                    <a class="text-primary" href="https://www.pegasusequipments.com/">Pegasus Equipments Pvt Ltd.&nbsp;</a><span id="year"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Jquery JS-->
+    <script src="{% static '/vendor/jquery-3.2.1.min.js' %}"></script>
+    <!-- Bootstrap JS-->
+    <script src="{% static '/vendor/bootstrap-4.1/popper.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap-4.1/bootstrap.min.js' %}"></script>
+    <!-- Vendor JS       -->
+    <script src="{% static '/vendor/slick/slick.min.js' %}">
+    </script>
+    <script src="{% static '/vendor/wow/wow.min.js' %}"></script>
+    <script src="{% static '/vendor/animsition/animsition.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js' %}">
+    </script>
+    <script src="{% static '/vendor/counter-up/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static '/vendor/counter-up/jquery.counterup.min.js' %}">
+    </script>
+    <script src="{% static '/vendor/circle-progress/circle-progress.min.js' %}"></script>
+    <script src="{% static '/vendor/perfect-scrollbar/perfect-scrollbar.js' %}"></script>
+    <script src="{% static '/vendor/chartjs/Chart.bundle.min.js' %}"></script>
+    <script src="{% static '/vendor/select2/select2.min.js' %}">
+    </script>
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+
+    <!-- Date js-->
+    <script src="{% static 'js/date.js' %}"></script>
+
+    <!-- Main JS-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script>
+        // Getting the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+
+</body>
+
+</html>
+<!-- end document-->
+
+<!-- GRID CODE
+
+    <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
+                </div>
+            </div>
+        </section>
+        -->

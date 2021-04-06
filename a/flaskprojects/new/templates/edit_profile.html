@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicons -->
+	<link href="{% static 'images/favicon.ico' %}" rel="icon">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/iconic/css/material-design-iconic-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main3.css' %}">
+<!--===============================================================================================-->
+<title>Change Password</title>
+</head>
+<body>
+
+  <div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+
+				<span class="login100-form-title p-b-10 p-t-10">
+					<h2>NxMD4W</h2>
+					<br>
+						<h4>Next Generation 4 Door IoT Controller</h4>
+					</span>
+
+					<span class="login100-form-title p-b-12 p-t-12">
+						EDIT PROFILE
+					</span>
+
+				<form class="login100-form validate-form" method="POST">
+					<div class="form-group">
+          {% csrf_token %}
+
+
+
+
+  <!-- <h2 class="text-center">Edit Profile</h2>
+
+  <div class="col-md-6 offset-md-3">
+    <form action="{% url 'edit_profile' %}" method="POST">
+      {% csrf_token %} -->
+      {% if form.errors %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <p>Your Form Has Errors...</p>
+          {% for field in form %}
+            {% if field.errors %}
+              {{ field.errors }}
+            {% endif %}
+          {% endfor %}
+        </div>
+
+      {% endif %}
+      
+      {{ form.as_p }}
+
+      <br>
+      <div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Edit Profile
+						</button>
+			</div>
+    </div>
+  </form>
+
+  <div class="text-center text-light">
+    <a class="txt1" href="{% url 'change_password' %}">
+       Click Here
+    </a>&nbsp;to change the password
+  </div>
+
+    <!-- <p> <a href="{% url 'change_password' %}">Click Here</a> to change the password.</p> -->
+
+  </div>
+</div>
+</div>
+
+
+
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        // Getting the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+</html>

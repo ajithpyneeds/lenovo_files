@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation Using LaxJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="scroll-text">
+        <h1>Scroll Down To See The Animation Effect</h1>
+    </section>
+    <section class="lax anim">
+        <h1>Lax JS</h1>
+        <p>Simple & light weight (&#3C 3kb gzipped) vanilla javascript plugin to create smooth & beautiful animations when you scrolllll! Harness the power of the most intuitive interaction and make your websites come alive!</p>
+        <div class="box1"></div>
+        <div class="box2" data-lax-preset="spin"></div>
+    </section>
+    <section class="footer">
+        <h1>Footer</h1>
+    </section>
+
+    <script src="scroll.js" ></script>
+
+    <script>
+        window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import "mixins";
+@import "function";
+
+.first-class {
+  color: #f00;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+.second-class {
+  background-color: #fff;
+}
+
+.third-class {
+  @extend .first-class;
+  @extend .second-class;
+  border-color: #ccc;
+}
+
+.border-blue {
+  border-color: $primary-color;
+  border-width: $border-width;
+}
+
+//////////////////////////////////
+
+.class {
+  color: red;
+  .sub-class {
+    background-color: green;
+    & .modifier {
+      border-bottom: 2px;
+      & .a .b {
+        display: block;
+      }
+    }
+  }
+}

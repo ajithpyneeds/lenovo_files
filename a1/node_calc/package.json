@@ -1,0 +1,11 @@
+{
+  "name": "node_calc",
+  "version": "1.0.0",
+  "description": "A simple node js calculator",
+  "main": "calc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajith HP",
+  "license": "ISC"
+}

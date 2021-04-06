@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Events</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>JQuery Events</h1>
+    </header>
+    <div class="container">
+      <h1>Mouse Events</h1>
+      <br>
+      <button id="btn1" class="but1" type="button" name="button">Button 1</button>
+      <button id="btn2" type="button" name="button">Button 2</button>
+      <br>
+      <p class="par1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p id="coords"></p>
+
+      <hr>
+      <form id="form">
+        <label for="">Name</label><br>
+        <input type="text" id="name" name="" value=""><br>
+        <label for="">Email</label><br>
+        <input type="email" id="email" name="" value=""><br>
+        <label for="">Gender</label><br>
+        <select id="gender" name="gender"><br>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select><br>
+        <button type="button" name="Button">Button</button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script>
+      // $(document).ready(function(){
+      //   $('#btn1').click(function(){
+      //     alert('Button Clicked');
+      //   });
+      //   $('#btn1').on('click',function(){
+      //     alert('I am Clicked...');
+      //   });
+      // });
+
+      $(document).ready(function(){
+        // $('#btn1').on('click',function(){
+        //   //$('.par1').hide();
+        //   $('.par1').toggle();
+        // });
+        // $('#btn2').on('click',function(){
+        //   $('.par1').show();
+        // });
+        // $('#btn1').on('dblclick',function(){
+        //   $('.par1').toggle();
+        // });
+
+        // $('#btn1').hover(function(){
+        //   $('.par1').toggle();
+        // });
+
+        // $('#btn1').on('mouseenter',function(){
+        //   $('.par1').toggle();
+        // });
+        //
+        // $('#btn1').on('mouseleave',function(){
+        //   $('.par1').toggle();
+        // });
+
+        // $('#btn1').on('mousemove',function(){
+        //    $('.par1').toggle();
+        // });
+
+        // $('#btn1').on('mousedown',function(){
+        //   $('.par1').toggle();
+        // });
+        //
+        // $('#btn1').on('mouseup',function(){
+        //   $('.par1').toggle();
+        // });
+
+        // $('#btn1').click(function(e){
+        //   console.log(e);
+        // });
+        // $('#btn1').click(function(e){
+        //   alert(e.currentTarget.id);
+        //   alert(e.currentTarget.innerHTML);
+        //   alert(e.currentTarget.outerHTML);
+        //   alert(e.currentTarget.className);
+        // });
+
+        // $(document).on('mousemove',function(e){
+        //   $('#coords').html('Coords:: Y: '+e.clientY+" X: "+e.clientX);
+        // });
+
+        // $('input').focus(function(){
+        //   alert('Focus');
+        // });
+
+        // $('input#name').focus(function(){
+        //   $('input#name').css('background','pink');
+        // });
+        //
+        // $('input').blur(function(){
+        //   $(this).css('background','white');
+        // });
+        //
+        // $('input').keyup(function(){
+        //   console.log('Keyup');
+        // });
+        //
+        // $('input').keyup(function(e){
+        //   console.log(e.target.value);
+        // });
+
+        // $('select#gender').change(function(){
+        //   alert('Changed...');
+        // });
+        //
+        // $('select').change(function(e){
+        //   alert(e.target.value);
+        // });
+
+        $('#form').submit(function(e){
+          e.preventDefault();
+          var name = $('input#name').val();
+          console.log(name);
+        });
+      });
+    </script>
+  </body>
+</html>

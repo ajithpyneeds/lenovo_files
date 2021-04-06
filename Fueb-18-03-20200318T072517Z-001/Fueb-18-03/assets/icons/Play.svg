@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Icon/Play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon/Play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Play-Button">
+            <circle id="Oval" stroke="#FCFCFC" stroke-width="2" cx="36" cy="36" r="36"></circle>
+            <path d="M37.9229986,29.560283 L44.5335361,42.7813578 C44.7805253,43.2753363 44.580301,43.8760094 44.0863225,44.1229986 C43.947467,44.1924263 43.794354,44.2285714 43.6391089,44.2285714 L30.418034,44.2285714 C29.8657492,44.2285714 29.418034,43.7808562 29.418034,43.2285714 C29.418034,43.0733263 29.4541791,42.9202133 29.5236068,42.7813578 L36.1341442,29.560283 C36.3811335,29.0663045 36.9818065,28.8660801 37.475785,29.1130694 C37.6693124,29.2098331 37.8262349,29.3667556 37.9229986,29.560283 Z" id="Triangle" fill="#FCFCFC" transform="translate(37.028571, 36.000000) rotate(90.000000) translate(-37.028571, -36.000000) "></path>
+        </g>
+    </g>
+</svg>

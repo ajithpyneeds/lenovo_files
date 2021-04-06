@@ -1,0 +1,114 @@
+/* * {
+  margin: 2px;
+}
+
+body {
+  font-size: 24px;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-header {
+  background: blue;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.flex-main {
+  display: flex;
+  flex: 1;
+}
+
+.flex-nav {
+  background: yellow;
+  padding-top: 3rem;
+  flex: 1 1 5rem;
+}
+
+.flex-article {
+  background: red;
+  padding-top: 3rem;
+  flex: 3 3;
+}
+
+.flex-aside {
+  background: green;
+  padding-top: 3rem;
+  flex: 1 1 5rem;
+}
+
+.flex-footer {
+    background: tomato;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+} */
+
+
+
+/* prefer this */
+* {
+  margin: 2px;
+}
+
+body {
+  font-size: 24px;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flex-header {
+  background: red;
+  padding: 3rem 0 3rem 0;
+}
+
+.flex-main {
+  display: flex;
+  flex: 1;
+}
+
+.flex-nav {
+  background: green;
+  flex: 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-article {
+  background: blue;
+  flex: 3 auto;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.flex-aside {
+  background: yellow;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-footer {
+  background: grey;
+  padding: 3rem 0 3rem 0;
+}
+
+@media all and (max-width:800px) {
+  .flex-main {
+    flex-direction: column;
+  }
+  body {
+    color: black;
+  }
+  .flex-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

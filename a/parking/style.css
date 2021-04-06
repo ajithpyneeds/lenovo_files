@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.items {
+  background-color :#b0b7b8;
+  
+  color:white;
+  font-size:30px;
+ }
+
+ .large {
+  background-color :#b0b7b8;
+  
+  color:white;
+  font-size:40px;
+  padding: 2px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+ .container {
+   background-color: white;
+   padding: 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   margin-top: 20px;
+ }
+
+ .doc {
+   margin-bottom: 0;
+   background-color: white;
+   padding: 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ #bike {
+   margin-bottom: 100px;
+ }
+
+ #remove {
+   background-color: white;
+ }
+
+ .header {
+   color: blue;
+   justify-content: center;
+   text-align: center;
+   padding: 10px;
+ }

@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Favicons -->
+    <link href="{% static 'images/favicon.ico' %}" rel="icon">
+
+    <script src="https://kit.fontawesome.com/6aa2e502bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    <title>Signup Pegasus</title>
+</head>
+<body id="#home">
+
+  <!-- Home Section -->
+
+  <header id="home-section">
+      <div class="dark-overlay">
+          <div class="home-inner container">
+            <div class="col-md-6 offset-md-3">
+                <div class="card card-center bg-primary text-center card-form">
+                    <div class="card-body">
+
+                      <h3>Signup</h3>
+                      <br>
+                      <form method="POST">
+                        {% csrf_token %}
+                        {% if form.errors %}
+
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                          <p>Your Form Has Errors...</p>
+                          {% for field in form %}
+                            {% if field.errors %}
+                              {{ field.errors }}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+
+                        {% endif %}
+
+                        {{ form.as_p }}
+
+                        <div class="container">
+                          <input type="submit" value="Signup" class="btn btn-secondary">
+                        </div>
+
+                      </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </header>
+
+
+
+  <!-- Footer -->
+
+  <div id="main-footer" class="bg-dark text-white">
+      <div class="container">
+          <div class="row">
+              <div class="col text-center py-4">
+                  <p>Copyright &copy; <span id="year"></span> Pegasus Equipments. Designed by
+                  <a href="https://www.pegasusequipments.com/">Pegasus Equipments Pvt Ltd</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+
+  <!-- <script>
+      $('.port-item').click(function () {
+          $('.collapse').collapse('hide');
+      });
+  </script> -->
+</body>
+</html>

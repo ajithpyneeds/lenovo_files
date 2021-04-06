@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AASA,MAAO;EACL,MAAM,EAAE,KAAyB;;AAGnC,MAAO;EACL,MAAM,EAAE,KAAyB;;AAGnC,MAAO;EACL,MAAM,EAAE,EAAK;;AASf,KAAM;EACJ,MAAM,EAAE,KAAiB;;AAG3B,KAAM;EACJ,MAAM,EAAE,KAAkB;;AAG5B,KAAM;EACJ,MAAM,EAAE,KAAkB",
+"sources": ["../sass/function.scss"],
+"names": [],
+"file": "function.css"
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE js>
+<html>
+    <head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Noto+Sans|Noto+Sans+TC:300,400,500,700&amp;display=swap"/>
+      <title>Fueb - Product-Vibe-bell</title>
+      <meta name="description" content=""/>
+      <meta name="author" content="Admin"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+      <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500,700&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Barlow&amp;display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link href="./css/app.css" rel="stylesheet"></head>
+  <body>
+    <header class="fb-header fb-header--white bg-animations">
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="d-flex align-items-center justify-content-between">
+                <li class="gsap-logo gsap-logo--black"><a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="32" viewBox="0 0 90 32">
+                      <g>
+                        <path d="M76.285 27.57c3.554 0 5.676-2.838 5.676-7.59 0-3.647-1.687-7.327-5.456-7.327-1.698 0-3.033.559-3.966 1.661-1.017 1.202-1.534 3.049-1.534 5.49v1.011c0 3.265 1.387 6.755 5.28 6.755m-27.852-9.983h9.358l-.088-.546c-.277-1.706-1.232-4.57-4.516-4.57-1.734 0-3.949.792-4.65 4.56zm-.227 3.939l.053.519c.388 3.741 1.968 5.483 4.974 5.483 2.217 0 3.81-1.01 4.37-2.774l.064-.2H64v-3.028zm-5.92 4.448v5.419h-7.008v-2.727l-1.475 1.73-.028.021C31.546 32 29.409 32 27.524 32c-2.18 0-4.085-.57-5.508-1.646-1.28-.967-2.122-2.326-2.373-3.826-.178-1.182-.214-2.576-.214-4.307V9.143h7.007v10.204c0 .725.044 2.61.18 3.808.316 2.64 1.724 3.925 4.306 3.925 2.646 0 4.356-2.293 4.356-5.842V9.143h7.008v5.559l.006-.014a11.193 11.193 0 0 1 2.155-3.15C46.71 9.224 49.874 8 53.595 8c3.677 0 6.738 1.294 8.853 3.743.61.706 1.129 1.508 1.552 2.372V0h7.005v12.023l.775-1.326.034-.03c1.715-1.53 4.491-2.444 7.427-2.444 6.015 0 9.902 4.46 9.902 11.36 0 3.825-1.103 7.026-3.19 9.257-1.905 2.038-4.571 3.16-7.506 3.16-1.474 0-4.229-.17-6.13-1.306l-.036-.022-1.276-1.407v2.12H64v-5.193C62.116 29.902 58.237 32 53.142 32c-3.464 0-6.41-1.015-8.516-2.936a9.92 9.92 0 0 1-2.334-3.227c-.542-1.182-.897-2.51-1.055-3.962.14 1.508.494 2.883 1.049 4.1zM21.714 1.143v5.303H6.925v7.927H19.31v5.303H6.925V32H0V1.143z"></path>
+                      </g>
+                    </svg></a></li>
+                <li class="d-md-flex align-items-center d-none">
+                  <nav>
+                    <ul class="fb-mainnav fb-mainnav--black align-items-center d-sm-flex">
+                      <li><a class="fb-nav-link" href="javascript:void(0)">Stories</a></li>
+                      <li class="js-dropdown-menu menu-item"><a class="fb-nav-link" href="javascript:void(0)">Products<span class="menu-arrow ml-1"><img class="ml-2" src="./assets/icons/dropdown_arrow.svg" alt="dropdown_arrow"/></span></a>
+                        <div class="menu-list">
+                          <ul>
+                            <li><a href="#">Door Lock</a></li>
+                            <li><a href="#">Door Bell</a></li>
+                            <li><a href="#">Switches</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a class="fb-nav-link" href="forum-login.html">Community</a></li>
+                      <li><a class="fb-nav-link" href="partner-with-us.html">partner with us</a></li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="d-flex align-items-center">
+                  <label class="menu-toggle__wrap js-navtoggler">
+                    <input type="checkbox"/>
+                    <div>
+                      <div class="menu-toggle__dots"><span></span><span></span></div>
+                      <svg>
+                        <use xlink:href="#path"></use>
+                      </svg>
+                      <svg>
+                        <use xlink:href="#path"></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+                      <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                    </symbol>
+                  </svg>
+                </li>
+              </ul>
+              <!--Header menu-->
+              <nav class="menu full-screen-nav js-header-animate">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="menu-nav-list">
+                        <li class="menu-nav-list__item"><a class="menu-link" href="index.html">Home</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="product.html">Products</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="experience.html">Fueb's Experience</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="customer-stories.html">Customer Stories</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="forum-login.html">Community</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="menu-nav-list">
+                        <li class="menu-nav-list__item"><a class="menu-link" href="app.html">Fueb App</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="about-us.html">About Us</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="menu-nav-list__item"><a class="menu-link" href="faq.html">FAQ</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="menu-nav-footer">
+                      <ul class="menu-nav-footer__left">
+                        <li class="menu-nav-footer-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li class="menu-nav-footer-item"><a href="javascript:void(0);">Terms and conditions                </a></li>
+                      </ul>
+                      <ul class="fub-social-list pt-0">
+                        <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-twitter"></i></a></li>
+                        <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-facebook"></i></a></li>
+                        <li><a class="fub-social-list__link fub-social-list__link--secondary" href="javascript:void(0);"><i class="social-icon icon-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <svg class="text-gradient-value" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <lineargradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#6164F1;stop-opacity:1"></stop>
+          <stop offset="100%" style="stop-color:#FF6FD4;stop-opacity:1"></stop>
+        </lineargradient>
+      </svg>
+    </header>
+    <main class="js-white-header js-product-page js-vibebell-product">
+      <div class="page-loader" style="width: 100%;height: 100%;position: fixed;background: #ffffff;z-index: 10000;left: 0;top: 0;"></div>
+      <div class="prodpg-wrapper prod-vibebell-wrap">
+        <!--START: PRODUCT INTRO-->
+        <div class="prodpg-header">
+          <div class="container d-flex">
+            <ul class="prodpg-header__links ml-lg-auto">
+              <li><a href="#"><span><img src="./assets/images/product/vibe-bell-sm.png" alt="Video Bell Product"/></span>
+                  <label>Vibe Bell</label></a></li>
+              <li class="active"><a href="#"><span><img src="./assets/images/product/armour-lock-sm.png" alt="Armour Lock Product"/></span>
+                  <label>Armour Lock</label></a></li>
+              <li><a href="#"><span><img src="./assets/images/product/magic-touches-sm.png" alt="Magic Touches Product"/></span>
+                  <label>Magic Touches</label></a></li>
+            </ul><a class="btn btn--bg-grad ml-auto" href="javascript:void(0);">Locate Store</a>
+          </div>
+        </div>
+        <!--START: PRODUCT INTRO-->
+        <section class="section-padding5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 product-detail-intro text-center">
+                <h1 class="section-heading-lg mb-3">Never Home Alone</h1>
+                <p class="fnt-md product-detail-intro__des">Wherever you go, Vibe video door bells help you get a clear view on who’s at the door with HD video and two-way audio streams delivered directly to your smartphone screen.</p>
+                <div class="product-vibe-view"> <img src="./assets/images/product-vibe-bell/product-vibe-bell.png" alt="Product Intro vibebell"/></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--START: PRODUCT FEATURES-->
+        <section class="product-feature product-feature-banner">
+          <div class="banner-img" style="background-image: url('./assets/images/product-vibe-bell/feature-banner.jpg');"></div>
+          <div class="banner-blackoverlay"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-5 offset-lg-1">
+                <div class="product-feature-w">
+                  <div class="product-feature__content"><span class="fnt-xlg">Features</span>
+                    <h3 class="section-heading mt-2 mb-3 mb-md-4">Wide Angle HD Camera</h3>
+                    <p class="product-feature__des">Vibe’s cameras provide HD infrared vision, helping you see clearly even in low light conditions, so you don’t miss a single detail before you open your doors. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--START: PRODUCT FEATURES-->
+        <section class="bg-black prodvibe-anim">
+          <div class="container">
+            <div class="prodvibe-anim__unlock prodvibe-anim__mainsec">
+              <div class="prodvibe-anim__section prodvibe-anim__unlockimg">
+                <div class="prodvibe-anim__audio" data-status="0">
+                  <audio controls="controls" autostart="0" preload="none">
+                    <source src="./assets/audio/please-unlock.ogg" type="audio/ogg"/>
+                    <source src="./assets/audio/please-unlock.mp3" type="audio/mpeg"/>
+                  </audio>
+                </div>
+                <div class="prodvibe-anim__img"><img src="./assets/images/product-vibe-bell/product-vibe-bell.png" alt="Door bell"/>
+                  <div class="wave-container-wrap">
+                    <div class="wave-container"><svg class="colourless-wave" xmlns="http://www.w3.org/2000/svg" width="888.246" height="121.5" viewBox="0 0 888.246 121.5">
+<defs>
+<linearGradient x1="0%" y1="50%" x2="100%" y2="50.1210643%" id="wave-gradient">
+<stop stop-color="#6164F1" offset="0%"></stop>
+<stop stop-color="#FF6FD4" offset="100%"></stop>
+</linearGradient>
+</defs>
+<path id="Path_1" data-name="Path 1" d="M8,58.807H8l6.647-12.456c3.518-6.592,7.514-6.517,8.879.165l4.726,23.165c3.208,15.734,7.237,15.713,8.944-.049L41.426,30.6c3.139-28.95,7.168-28.938,8.953.024l3.943,63.887c1.785,28.963,5.814,28.974,8.952.025L68.1,50.06c1.386-12.767,5.406-12.807,8.936-.087l2.89,10.417c2.054,7.4,6.063,7.426,8.9.055L92.813,50.09c2.14-5.547,6.123-5.57,8.857-.054l4.85,9.785c1.773,3.578,5.695,3.658,8.713.177l3.258-3.757a5.539,5.539,0,0,1,8.594,0l1.418,1.632c4.03,4.65,7.976,4.494,8.767-.346l4.12-25.237c2.685-16.438,6.71-16.43,8.948.014L156,73.92c1.827,13.4,5.848,13.425,8.94.05l1.757-7.59c3.114-13.471,7.138-13.449,8.936.05l4.194,31.42c3.068,22.99,7.1,22.979,8.953-.028l6.507-80.63c1.736-21.576,5.765-21.591,8.948-.035l5.939,40.226c.725,4.92,4.672,5.078,8.767.354l.82-.942c2.627-3.03,6.524-2.993,8.656.081l1.056,1.52c3.022,4.362,6.981,4.3,8.791-.14l3.831-9.38c3.258-7.98,7.262-7.934,8.9.1l6.277,30.75c2.082,10.207,6.1,10.224,8.928.037l5-18.031c1.6-5.747,5.579-5.816,8.853-.151l2.693,4.66c2.42,4.182,6.375,4.182,8.792,0l5.126-8.863c1.938-3.353,5.847-3.415,8.692-.137l1.584,1.825c3.46,3.992,7.4,3.874,8.746-.262l3.08-9.436c2.7-8.253,6.706-8.24,8.912.03l5.505,20.62c1.943,7.275,5.943,7.306,8.895.072l4.82-11.81c1.572-3.85,5.5-3.947,8.735-.22l.895,1.031c3.447,3.978,7.385,3.86,8.746-.26L370.607,42.7c2.878-8.72,6.895-8.7,8.916.05l4.317,18.67c2.775,12,6.8,11.994,8.936-.027l4.268-24c2.689-15.108,6.714-15.1,8.949.015l3.67,24.879c2.924,19.8,6.948,19.79,8.948-.024l2.223-22c2.52-24.958,6.548-24.957,8.953,0l3.93,40.8c2.606,27.053,6.635,27.05,8.952-.006l4.12-48.073c2.59-30.262,6.622-30.259,8.952,0l4.59,59.52c2.317,30.065,6.346,30.068,8.953.006l3.843-44.3c1.018-11.753,5.035-11.81,8.928-.126l4.577,13.747c2.2,6.607,6.2,6.624,8.887.038l3.822-9.362c2.384-5.844,6.376-5.848,8.87-.008l2.961,6.938c1.617,3.787,5.547,3.883,8.73.212l2.961-3.412a5.535,5.535,0,0,1,8.59,0l1.707,1.967c3.872,4.466,7.819,4.319,8.763-.325l5.484-26.872c3.209-15.733,7.238-15.712,8.945.05l6.144,56.7c2.087,19.231,6.116,19.24,8.953.02L576.476,53.7c1.57-10.637,5.587-10.675,8.932-.087l3.657,11.6c1.823,5.777,5.806,5.827,8.862.11l3.658-6.86c2.111-3.953,6.058-3.988,8.767-.078v0c3.027,4.36,6.986,4.3,8.8-.14l3.633-8.91c3.365-8.24,7.373-8.189,8.907.113l2.532,13.694c2.813,15.188,6.837,15.177,8.949-.024l6.066-43.708c3.163-22.8,7.191-22.788,8.948.031l6.412,83.16c1.89,24.506,5.918,24.517,8.953.025l5.06-40.857c1.357-10.942,5.373-10.99,8.928-.1l.754,2.312c1.77,5.422,5.753,5.478,8.846.126l2.26-3.908c2.837-4.907,6.808-4.87,8.833.084l3.7,9.067c3.117,7.64,7.125,7.6,8.9-.09l4.548-19.675c2.9-12.51,6.916-12.495,8.936.037l4.31,26.7c2.783,17.247,6.812,17.238,8.948-.02l4.383-35.38c2.623-21.19,6.652-21.185,8.953.009l4.4,40.583c2.458,22.664,6.487,22.664,8.953,0l3.727-34.268c1.225-11.225,5.242-11.277,8.928-.113l2.932,8.87c1.872,5.673,5.86,5.72,8.858.1l3.188-5.97c2.42-4.543,6.387-4.543,8.812,0l5.27,9.872c1.852,3.47,5.77,3.542,8.7.158l3.415-3.934a5.538,5.538,0,0,1,8.593,0l2.108,2.433c3.653,4.21,7.6,4.078,8.758-.293l4.908-18.39c3.307-12.4,7.332-12.369,8.936.07l4.31,33.385c1.764,13.664,5.785,13.687,8.94.053l5.3-22.914c1.1-4.784,5.06-4.912,8.788-.282L895,58.094h0" transform="translate(-7.338 -0.25)" fill="none" stroke="#000" stroke-miterlimit="50" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>
+                    </div>
+                    <div class="wave-container coloured-wave-wrap"><svg class="coloured-wave" xmlns="http://www.w3.org/2000/svg" width="888.246" height="121.5" viewBox="0 0 888.246 121.5">
+<path id="Path_1" data-name="Path 1" d="M8,58.807H8l6.647-12.456c3.518-6.592,7.514-6.517,8.879.165l4.726,23.165c3.208,15.734,7.237,15.713,8.944-.049L41.426,30.6c3.139-28.95,7.168-28.938,8.953.024l3.943,63.887c1.785,28.963,5.814,28.974,8.952.025L68.1,50.06c1.386-12.767,5.406-12.807,8.936-.087l2.89,10.417c2.054,7.4,6.063,7.426,8.9.055L92.813,50.09c2.14-5.547,6.123-5.57,8.857-.054l4.85,9.785c1.773,3.578,5.695,3.658,8.713.177l3.258-3.757a5.539,5.539,0,0,1,8.594,0l1.418,1.632c4.03,4.65,7.976,4.494,8.767-.346l4.12-25.237c2.685-16.438,6.71-16.43,8.948.014L156,73.92c1.827,13.4,5.848,13.425,8.94.05l1.757-7.59c3.114-13.471,7.138-13.449,8.936.05l4.194,31.42c3.068,22.99,7.1,22.979,8.953-.028l6.507-80.63c1.736-21.576,5.765-21.591,8.948-.035l5.939,40.226c.725,4.92,4.672,5.078,8.767.354l.82-.942c2.627-3.03,6.524-2.993,8.656.081l1.056,1.52c3.022,4.362,6.981,4.3,8.791-.14l3.831-9.38c3.258-7.98,7.262-7.934,8.9.1l6.277,30.75c2.082,10.207,6.1,10.224,8.928.037l5-18.031c1.6-5.747,5.579-5.816,8.853-.151l2.693,4.66c2.42,4.182,6.375,4.182,8.792,0l5.126-8.863c1.938-3.353,5.847-3.415,8.692-.137l1.584,1.825c3.46,3.992,7.4,3.874,8.746-.262l3.08-9.436c2.7-8.253,6.706-8.24,8.912.03l5.505,20.62c1.943,7.275,5.943,7.306,8.895.072l4.82-11.81c1.572-3.85,5.5-3.947,8.735-.22l.895,1.031c3.447,3.978,7.385,3.86,8.746-.26L370.607,42.7c2.878-8.72,6.895-8.7,8.916.05l4.317,18.67c2.775,12,6.8,11.994,8.936-.027l4.268-24c2.689-15.108,6.714-15.1,8.949.015l3.67,24.879c2.924,19.8,6.948,19.79,8.948-.024l2.223-22c2.52-24.958,6.548-24.957,8.953,0l3.93,40.8c2.606,27.053,6.635,27.05,8.952-.006l4.12-48.073c2.59-30.262,6.622-30.259,8.952,0l4.59,59.52c2.317,30.065,6.346,30.068,8.953.006l3.843-44.3c1.018-11.753,5.035-11.81,8.928-.126l4.577,13.747c2.2,6.607,6.2,6.624,8.887.038l3.822-9.362c2.384-5.844,6.376-5.848,8.87-.008l2.961,6.938c1.617,3.787,5.547,3.883,8.73.212l2.961-3.412a5.535,5.535,0,0,1,8.59,0l1.707,1.967c3.872,4.466,7.819,4.319,8.763-.325l5.484-26.872c3.209-15.733,7.238-15.712,8.945.05l6.144,56.7c2.087,19.231,6.116,19.24,8.953.02L576.476,53.7c1.57-10.637,5.587-10.675,8.932-.087l3.657,11.6c1.823,5.777,5.806,5.827,8.862.11l3.658-6.86c2.111-3.953,6.058-3.988,8.767-.078v0c3.027,4.36,6.986,4.3,8.8-.14l3.633-8.91c3.365-8.24,7.373-8.189,8.907.113l2.532,13.694c2.813,15.188,6.837,15.177,8.949-.024l6.066-43.708c3.163-22.8,7.191-22.788,8.948.031l6.412,83.16c1.89,24.506,5.918,24.517,8.953.025l5.06-40.857c1.357-10.942,5.373-10.99,8.928-.1l.754,2.312c1.77,5.422,5.753,5.478,8.846.126l2.26-3.908c2.837-4.907,6.808-4.87,8.833.084l3.7,9.067c3.117,7.64,7.125,7.6,8.9-.09l4.548-19.675c2.9-12.51,6.916-12.495,8.936.037l4.31,26.7c2.783,17.247,6.812,17.238,8.948-.02l4.383-35.38c2.623-21.19,6.652-21.185,8.953.009l4.4,40.583c2.458,22.664,6.487,22.664,8.953,0l3.727-34.268c1.225-11.225,5.242-11.277,8.928-.113l2.932,8.87c1.872,5.673,5.86,5.72,8.858.1l3.188-5.97c2.42-4.543,6.387-4.543,8.812,0l5.27,9.872c1.852,3.47,5.77,3.542,8.7.158l3.415-3.934a5.538,5.538,0,0,1,8.593,0l2.108,2.433c3.653,4.21,7.6,4.078,8.758-.293l4.908-18.39c3.307-12.4,7.332-12.369,8.936.07l4.31,33.385c1.764,13.664,5.785,13.687,8.94.053l5.3-22.914c1.1-4.784,5.06-4.912,8.788-.282L895,58.094h0" transform="translate(-7.338 -0.25)" fill="none" stroke="#000" stroke-miterlimit="50" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>
+                    </div>
+                  </div>
+                  <ul class="content-container-wrap"></ul>
+                </div>
+              </div>
+              <div class="prodvibe-anim__unlocktext">
+                <!-- With filled gradient waves-->
+                <div class="row py-md-5 prodvibe-anim__section">
+                  <div class="col-md-7 col-lg-6 offset-lg-1">
+                    <div class="product-doorbell-text">   
+                      <h3 class="section-heading">Hear it all</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row py-md-5 prodvibe-anim__section">
+                  <div class="col-md-7 col-lg-6 offset-lg-1">
+                    <div class="product-doorbell-text">   
+                      <h3 class="section-heading mb-3">Microphone & Speakers</h3>
+                      <p class="txt-whitedark fnt-md">Equipped with echo cancellation and the ability to respond to a wide range of speech patterns and vocabulary, Vibe door bells ensure crystal-clear two-way communication between you and the outside world.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="prodvibe-anim__welcome prodvibe-anim__mainsec">
+              <div class="prodvibe-anim__section prodvibe-anim__welcomeimg">
+                <div class="prodvibe-anim__audio" data-status="0">
+                  <audio controls="controls" autostart="0" preload="none">
+                    <source src="./assets/audio/hey-welcome.ogg" type="audio/ogg"/>
+                    <source src="./assets/audio/hey-welcome.mp3" type="audio/mpeg"/>
+                  </audio>
+                </div>
+                <div class="prodvibe-anim__img"><img src="./assets/images/product-vibe-bell/product-vibe-bell.png" alt="Door bell"/>
+                  <div class="wave-container-wrap">
+                    <div class="wave-container">
+                                                 <svg class="colourless-wave" xmlns="http://www.w3.org/2000/svg" width="888.246" height="121.5" viewBox="0 0 888.246 121.5">
+<defs>
+<linearGradient x1="0%" y1="50%" x2="100%" y2="50.1210643%" id="wave-gradient">
+<stop stop-color="#6164F1" offset="0%"></stop>
+<stop stop-color="#FF6FD4" offset="100%"></stop>
+</linearGradient>
+</defs>
+<path id="Path_1" data-name="Path 1" d="M8,58.807H8l6.647-12.456c3.518-6.592,7.514-6.517,8.879.165l4.726,23.165c3.208,15.734,7.237,15.713,8.944-.049L41.426,30.6c3.139-28.95,7.168-28.938,8.953.024l3.943,63.887c1.785,28.963,5.814,28.974,8.952.025L68.1,50.06c1.386-12.767,5.406-12.807,8.936-.087l2.89,10.417c2.054,7.4,6.063,7.426,8.9.055L92.813,50.09c2.14-5.547,6.123-5.57,8.857-.054l4.85,9.785c1.773,3.578,5.695,3.658,8.713.177l3.258-3.757a5.539,5.539,0,0,1,8.594,0l1.418,1.632c4.03,4.65,7.976,4.494,8.767-.346l4.12-25.237c2.685-16.438,6.71-16.43,8.948.014L156,73.92c1.827,13.4,5.848,13.425,8.94.05l1.757-7.59c3.114-13.471,7.138-13.449,8.936.05l4.194,31.42c3.068,22.99,7.1,22.979,8.953-.028l6.507-80.63c1.736-21.576,5.765-21.591,8.948-.035l5.939,40.226c.725,4.92,4.672,5.078,8.767.354l.82-.942c2.627-3.03,6.524-2.993,8.656.081l1.056,1.52c3.022,4.362,6.981,4.3,8.791-.14l3.831-9.38c3.258-7.98,7.262-7.934,8.9.1l6.277,30.75c2.082,10.207,6.1,10.224,8.928.037l5-18.031c1.6-5.747,5.579-5.816,8.853-.151l2.693,4.66c2.42,4.182,6.375,4.182,8.792,0l5.126-8.863c1.938-3.353,5.847-3.415,8.692-.137l1.584,1.825c3.46,3.992,7.4,3.874,8.746-.262l3.08-9.436c2.7-8.253,6.706-8.24,8.912.03l5.505,20.62c1.943,7.275,5.943,7.306,8.895.072l4.82-11.81c1.572-3.85,5.5-3.947,8.735-.22l.895,1.031c3.447,3.978,7.385,3.86,8.746-.26L370.607,42.7c2.878-8.72,6.895-8.7,8.916.05l4.317,18.67c2.775,12,6.8,11.994,8.936-.027l4.268-24c2.689-15.108,6.714-15.1,8.949.015l3.67,24.879c2.924,19.8,6.948,19.79,8.948-.024l2.223-22c2.52-24.958,6.548-24.957,8.953,0l3.93,40.8c2.606,27.053,6.635,27.05,8.952-.006l4.12-48.073c2.59-30.262,6.622-30.259,8.952,0l4.59,59.52c2.317,30.065,6.346,30.068,8.953.006l3.843-44.3c1.018-11.753,5.035-11.81,8.928-.126l4.577,13.747c2.2,6.607,6.2,6.624,8.887.038l3.822-9.362c2.384-5.844,6.376-5.848,8.87-.008l2.961,6.938c1.617,3.787,5.547,3.883,8.73.212l2.961-3.412a5.535,5.535,0,0,1,8.59,0l1.707,1.967c3.872,4.466,7.819,4.319,8.763-.325l5.484-26.872c3.209-15.733,7.238-15.712,8.945.05l6.144,56.7c2.087,19.231,6.116,19.24,8.953.02L576.476,53.7c1.57-10.637,5.587-10.675,8.932-.087l3.657,11.6c1.823,5.777,5.806,5.827,8.862.11l3.658-6.86c2.111-3.953,6.058-3.988,8.767-.078v0c3.027,4.36,6.986,4.3,8.8-.14l3.633-8.91c3.365-8.24,7.373-8.189,8.907.113l2.532,13.694c2.813,15.188,6.837,15.177,8.949-.024l6.066-43.708c3.163-22.8,7.191-22.788,8.948.031l6.412,83.16c1.89,24.506,5.918,24.517,8.953.025l5.06-40.857c1.357-10.942,5.373-10.99,8.928-.1l.754,2.312c1.77,5.422,5.753,5.478,8.846.126l2.26-3.908c2.837-4.907,6.808-4.87,8.833.084l3.7,9.067c3.117,7.64,7.125,7.6,8.9-.09l4.548-19.675c2.9-12.51,6.916-12.495,8.936.037l4.31,26.7c2.783,17.247,6.812,17.238,8.948-.02l4.383-35.38c2.623-21.19,6.652-21.185,8.953.009l4.4,40.583c2.458,22.664,6.487,22.664,8.953,0l3.727-34.268c1.225-11.225,5.242-11.277,8.928-.113l2.932,8.87c1.872,5.673,5.86,5.72,8.858.1l3.188-5.97c2.42-4.543,6.387-4.543,8.812,0l5.27,9.872c1.852,3.47,5.77,3.542,8.7.158l3.415-3.934a5.538,5.538,0,0,1,8.593,0l2.108,2.433c3.653,4.21,7.6,4.078,8.758-.293l4.908-18.39c3.307-12.4,7.332-12.369,8.936.07l4.31,33.385c1.764,13.664,5.785,13.687,8.94.053l5.3-22.914c1.1-4.784,5.06-4.912,8.788-.282L895,58.094h0" transform="translate(-7.338 -0.25)" fill="none" stroke="#000" stroke-miterlimit="50" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>
+                    </div>
+                    <div class="wave-container coloured-wave-wrap"><svg class="coloured-wave" xmlns="http://www.w3.org/2000/svg" width="888.246" height="121.5" viewBox="0 0 888.246 121.5">
+<path id="Path_1" data-name="Path 1" d="M8,58.807H8l6.647-12.456c3.518-6.592,7.514-6.517,8.879.165l4.726,23.165c3.208,15.734,7.237,15.713,8.944-.049L41.426,30.6c3.139-28.95,7.168-28.938,8.953.024l3.943,63.887c1.785,28.963,5.814,28.974,8.952.025L68.1,50.06c1.386-12.767,5.406-12.807,8.936-.087l2.89,10.417c2.054,7.4,6.063,7.426,8.9.055L92.813,50.09c2.14-5.547,6.123-5.57,8.857-.054l4.85,9.785c1.773,3.578,5.695,3.658,8.713.177l3.258-3.757a5.539,5.539,0,0,1,8.594,0l1.418,1.632c4.03,4.65,7.976,4.494,8.767-.346l4.12-25.237c2.685-16.438,6.71-16.43,8.948.014L156,73.92c1.827,13.4,5.848,13.425,8.94.05l1.757-7.59c3.114-13.471,7.138-13.449,8.936.05l4.194,31.42c3.068,22.99,7.1,22.979,8.953-.028l6.507-80.63c1.736-21.576,5.765-21.591,8.948-.035l5.939,40.226c.725,4.92,4.672,5.078,8.767.354l.82-.942c2.627-3.03,6.524-2.993,8.656.081l1.056,1.52c3.022,4.362,6.981,4.3,8.791-.14l3.831-9.38c3.258-7.98,7.262-7.934,8.9.1l6.277,30.75c2.082,10.207,6.1,10.224,8.928.037l5-18.031c1.6-5.747,5.579-5.816,8.853-.151l2.693,4.66c2.42,4.182,6.375,4.182,8.792,0l5.126-8.863c1.938-3.353,5.847-3.415,8.692-.137l1.584,1.825c3.46,3.992,7.4,3.874,8.746-.262l3.08-9.436c2.7-8.253,6.706-8.24,8.912.03l5.505,20.62c1.943,7.275,5.943,7.306,8.895.072l4.82-11.81c1.572-3.85,5.5-3.947,8.735-.22l.895,1.031c3.447,3.978,7.385,3.86,8.746-.26L370.607,42.7c2.878-8.72,6.895-8.7,8.916.05l4.317,18.67c2.775,12,6.8,11.994,8.936-.027l4.268-24c2.689-15.108,6.714-15.1,8.949.015l3.67,24.879c2.924,19.8,6.948,19.79,8.948-.024l2.223-22c2.52-24.958,6.548-24.957,8.953,0l3.93,40.8c2.606,27.053,6.635,27.05,8.952-.006l4.12-48.073c2.59-30.262,6.622-30.259,8.952,0l4.59,59.52c2.317,30.065,6.346,30.068,8.953.006l3.843-44.3c1.018-11.753,5.035-11.81,8.928-.126l4.577,13.747c2.2,6.607,6.2,6.624,8.887.038l3.822-9.362c2.384-5.844,6.376-5.848,8.87-.008l2.961,6.938c1.617,3.787,5.547,3.883,8.73.212l2.961-3.412a5.535,5.535,0,0,1,8.59,0l1.707,1.967c3.872,4.466,7.819,4.319,8.763-.325l5.484-26.872c3.209-15.733,7.238-15.712,8.945.05l6.144,56.7c2.087,19.231,6.116,19.24,8.953.02L576.476,53.7c1.57-10.637,5.587-10.675,8.932-.087l3.657,11.6c1.823,5.777,5.806,5.827,8.862.11l3.658-6.86c2.111-3.953,6.058-3.988,8.767-.078v0c3.027,4.36,6.986,4.3,8.8-.14l3.633-8.91c3.365-8.24,7.373-8.189,8.907.113l2.532,13.694c2.813,15.188,6.837,15.177,8.949-.024l6.066-43.708c3.163-22.8,7.191-22.788,8.948.031l6.412,83.16c1.89,24.506,5.918,24.517,8.953.025l5.06-40.857c1.357-10.942,5.373-10.99,8.928-.1l.754,2.312c1.77,5.422,5.753,5.478,8.846.126l2.26-3.908c2.837-4.907,6.808-4.87,8.833.084l3.7,9.067c3.117,7.64,7.125,7.6,8.9-.09l4.548-19.675c2.9-12.51,6.916-12.495,8.936.037l4.31,26.7c2.783,17.247,6.812,17.238,8.948-.02l4.383-35.38c2.623-21.19,6.652-21.185,8.953.009l4.4,40.583c2.458,22.664,6.487,22.664,8.953,0l3.727-34.268c1.225-11.225,5.242-11.277,8.928-.113l2.932,8.87c1.872,5.673,5.86,5.72,8.858.1l3.188-5.97c2.42-4.543,6.387-4.543,8.812,0l5.27,9.872c1.852,3.47,5.77,3.542,8.7.158l3.415-3.934a5.538,5.538,0,0,1,8.593,0l2.108,2.433c3.653,4.21,7.6,4.078,8.758-.293l4.908-18.39c3.307-12.4,7.332-12.369,8.936.07l4.31,33.385c1.764,13.664,5.785,13.687,8.94.053l5.3-22.914c1.1-4.784,5.06-4.912,8.788-.282L895,58.094h0" transform="translate(-7.338 -0.25)" fill="none" stroke="#000" stroke-miterlimit="50" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>
+                    </div>
+                  </div>
+                  <ul class="content-container-wrap"></ul>
+                </div>
+              </div>
+              <div class="prodvibe-anim__welcometext">
+                <div class="row justify-content-end prodvibe-anim__section">
+                  <div class="col-md-7 col-lg-6 offset-lg-1">
+                    <div class="product-doorbell-text">   
+                      <h3 class="section-heading">Let the right one in</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-end pt-md-5 prodvibe-anim__section">
+                  <div class="col-md-7 col-lg-6 offset-lg-1">
+                    <div class="product-doorbell-text">   
+                      <h3 class="section-heading mb-3">Motion detection sensors</h3>
+                      <p class="txt-whitedark fnt-md">Your door bell contains precisely calibrated motion and proximity sensors that can detect, record and report any suspicious movements at your doorstep directly to your smartphone.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-end pt-md-5 prodvibe-anim__section">
+                  <div class="col-md-7 col-lg-6 offset-lg-1">
+                    <div class="product-doorbell-text">   
+                      <h3 class="section-heading mb-3">LED Glass Rings</h3>
+                      <p class="txt-whitedark fnt-md">Your door bell contains precisely calibrated motion and proximity sensors that can detect, record and report any suspicious movements at your doorstep directly to your smartphone.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--START: PRODUCT FEATURES-->
+        <section class="armourpg-features">
+          <div class="container position-relative">
+            <div class="row align-items-center">
+              <div class="armourpg-features__wrap col-sm-5">
+                <div class="phonescreen-wrap">
+                  <div class="armourpg-features__img" data-slide="0"><img src="./assets/images/mockup-white-1.gif" alt="Entertainment Mobile app"/></div>
+                  <div class="armourpg-features__img" data-slide="1"><img src="./assets/images/mockup-white-2.gif" alt="Entertainment Mobile app"/></div>
+                </div>
+              </div>
+              <div class="armourpg-features__content col-sm-7">
+                <div class="swiper-container js-armour-feature-slider hght100">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="armourpg-features__text" data-slide="0">
+                        <label>Features</label>
+                        <h4 class="mobile-content__heading">Smart phone becomes smart key</h4>
+                        <p class="fnt-md mobile-content__des">Rushing to work? Need to let the maid in? No worries! Lock, unlock from anywhere through Fueb’s custom-built app on your phone, tablet or computer.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="armourpg-features__text" data-slide="1">
+                        <h4 class="mobile-content__heading">Activity Log</h4>
+                        <p class="fnt-md mobile-content__des">Virtual keys for guests can be generated through app and activity logs can be maintained.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--START: Customer Benifits-->
+        <section class="armourpg-benefits bg-black">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-md-5 armourpg-benefits__textbox">
+                <h2>Security comes first</h2>
+                <div class="swiper-container js-benefit-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="armourpg-benefits__box">
+                        <div class="progress-bar"><span></span></div>
+                        <h3>Quick unlock</h3>
+                        <p>The Armour Lock helps you unlock the door in a fraction of a second, no matter which method you choose  </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="armourpg-benefits__box">
+                        <div class="progress-bar"><span></span></div>
+                        <h3>Fail-safe option  </h3>
+                        <p>Fueb Armour lock finger print sensor helps you to unlock the door in less than 0.20 Seconds</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="armourpg-benefits__box">
+                        <div class="progress-bar"><span></span></div>
+                        <h3>Rugged, reliable</h3>
+                        <p>Advanced sensors to detect tampering. Built to be rust, fire and water resistant.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 armourpg-benefits__imgbox">
+                <div class="swiper-container js-benefitimg-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/product/armour-slider-img.jpg" alt=""/></div>
+                    <div class="swiper-slide"><img src="./assets/images/product/armour-slider-img.jpg" alt=""/></div>
+                    <div class="swiper-slide"><img src="./assets/images/product/armour-slider-img.jpg" alt=""/></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--START: PRODUCT-SECURITY COLOR-->
+        <section class="section-padding8">
+          <div class="container">
+            <div class="row product-color-wrapper">
+              <div class="col-md-6 d-md-flex align-items-md-center">
+                <div class="product-color-info">
+                  <h3 class="section-heading-lg mt-3 mt-lg-4 pt-2">Security now in 2 colors</h3>
+                  <div class="product-color-infowrap">
+                    <ul class="product-clrlist mt-2 mt-sm-3 mt-lg-4">
+                      <li class="product-clrlist__item active" id="brandy"></li>
+                      <li class="product-clrlist__item" id="gray"></li>
+                      <li class="product-clrlist__item" id="whisper"></li>
+                      <li class="product-clrlist__item" id="quill-gray"></li>
+                    </ul>
+                    <ul class="product-namelist">
+                      <li class="active" data-value="brandy"><span class="fnt-xlg d-block">Satin Nickel</span></li>
+                      <li data-value="gray"><span class="fnt-xlg d-block">Gray</span></li>
+                      <li data-value="whisper"><span class="fnt-xlg d-block">White</span></li>
+                      <li data-value="quill-gray"><span class="fnt-xlg d-block">Silver</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="product-clred-view text-center"><img class="img-fluid img-dummy" src="./assets/images/product-vibe-bell/colors/black.png" alt="Product Vibe-bell"/>
+                  <div class="prod-color-wrapper"><img class="active" data-img="brandy" src="./assets/images/product-vibe-bell/colors/gold.png" alt="Product Vibe-bell"/><img data-img="gray" src="./assets/images/product-vibe-bell/colors/black.png" alt="Product Vibe-bell"/><img data-img="whisper" src="./assets/images/product-vibe-bell/colors/white.png" alt="Product Vibe-bell"/><img data-img="quill-gray" src="./assets/images/product-vibe-bell/colors/silver.png" alt="Product Vibe-bell"/></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--START: PRODUCT-SPECIFICATIONS-->
+        <section class="bg-grey section-padding5 pb-md-5 mobile-plr-1">
+          <div class="container">
+            <div class="row mb-4 mb-md-5">
+              <div class="col-md-8">
+                <h3 class="section-heading"><span class="d-block fnt-xlg">Vibe Bell</span>Specifications</h3>
+              </div>
+            </div>
+            <div class="row specification-list">
+              <div class="col-md-4 specification-list__item">
+                <h5 class="specification-list__title">Connectivity Technology </h5>
+                <p class="specification-list__des">1.5Vdc AA Alkaline battery X 8</p>
+              </div>
+              <div class="col-md-4 specification-list__item">
+                <h5 class="specification-list__title">Environmental Parameters</h5>
+                <p class="specification-list__des">Min Operating Temperature: -20ºC</p>
+                <p class="specification-list__des">1.5Vdc AA Alkaline battery X 8</p>
+              </div>
+              <div class="col-md-4 specification-list__item">
+                <h5 class="specification-list__title">Warranty </h5>
+                <p class="specification-list__des">1-year manufacturer warranty*</p>
+              </div>
+              <div class="col-md-4 specification-list__item">
+                <h5 class="specification-list__title">Wi-Fi </h5>
+                <p class="specification-list__des">802.11 b/g/n Wi-Fi connection @ 2.4GHz</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="prodpg-likeproduct">
+          <div class="container">
+            <div class="row flex-reverse align-items-center">
+              <div class="col-md-6">
+                <h2 class="section-heading">Like fueb products ?</h2>
+                <p>Do you like our products ? See all the products from fueb family</p><a class="link my-4" href="javascript:void(0);">See More Products</a>
+              </div>
+              <div class="col-md-6">
+                <div class="img-container"><img class="img-fluid" src="./assets/images/product/like-products.png" alt=""/></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-padding6 pb-0 bg-grey text-center text-md-left">
+          <div class="container js-contact-3">
+            <div class="row align-items-md-center">
+              <div class="col-md-6 order-md-2">
+                <h2 class="collaborate-heading mb-lg-5">Like our products ? Collaborate with us for the next level   </h2><a class="link link--center my-4" href="javascript:void(0);">Partner with us</a>
+              </div>
+              <div class="col-md-6 order-md-1"><img class="img-fluid brdaius5" src="./assets/images/contact-us/collaborate-with-us.png" alt="collaborate-with-us"/></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="fub-footer fub-footer--secondary">
+      <div class="container">
+        <div class="row fub-footer__pb6 pt-4 pt-md-5">
+          <div class="col-md-5 col-lg-4 mb-3 mb-md-0">
+            <h3 class="section-heading mb-md-4"> Stay in touch!</h3>
+            <p class="fub-footer__des">Leave us your details for all the latest updates from us.</p>
+          </div>
+          <div class="col-md-7 col-lg-8 d-flex align-items-end justify-content-end">
+            <form class="join-form form-input-secondary mt-0 mr-md-0 footer-form-mb" autocomplete="off">
+              <div class="form-group mb-0">
+                <input class="form-control input-type newslttr-input" id="email" type="text" required=""/>
+                <label class="form-control-placeholder" for="email">Email ID</label>
+              </div>
+              <button class="btn btn--gradient mt-0 ml-3 ml-lg-4" type="submit"> <span>Subscribe</span></button>
+            </form>
+          </div>
+        </div>
+        <hr class="horizontal-row"/>
+        <div class="row footer-nav-info">
+          <div class="col-md-4 mb-4 mb-md-0"><img class="mb-3 footer-logo" src="assets/images/black-logo.png" alt="white logo"/>
+            <p class="fub-footer__des">We aim to simplify home automation by creating a range of luxurious, utilitarian products to enhance your everyday life.</p>
+          </div>
+          <div class="col-6 col-md-2 mb-3 mb-md-0">
+            <h6 class="fub-footer__heading mb-0 mb-md-2">Products</h6>
+            <ul class="fub-footer-list">
+              <li class="fub-footer-list__item"><a href="product.html">Armour Smart Lock</a></li>
+              <li class="fub-footer-list__item"><a href="product-vibe-bell.html">Vibe Door Bell</a></li>
+              <li class="fub-footer-list__item"><a href="javascript:void(0);">Touch Magic</a></li>
+              <li class="fub-footer-list__item"><a href="product-switch.html">Switches</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3 mb-md-0">
+            <h6 class="fub-footer__heading mb-0 mb-md-2">Fueb</h6>
+            <ul class="fub-footer-list">
+              <li class="fub-footer-list__item"><a href="about-us.html">About us</a></li>
+              <li class="fub-footer-list__item"><a href="partner-with-us.html">Partners</a></li>
+              <li class="fub-footer-list__item"><a href="javascript:void(0);">News & Events</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fub-footer__heading mb-0 mb-md-2">Support</h6>
+            <ul class="fub-footer-list">
+              <li class="fub-footer-list__item"><a href="javascript:void(0);">Community</a></li>
+              <li class="fub-footer-list__item"><a href="contact-us.html">Contact Us</a></li>
+              <li class="fub-footer-list__item"><a href="blog.html">Blog</a></li>
+              <li class="fub-footer-list__item"><a href="faq.html">FAQ</a></li>
+              <li class="fub-footer-list__item"><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fub-footer__heading mb-0 mb-md-2">Social Media</h6>
+            <ul class="fub-social-list">
+              <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-twitter"></i></a></li>
+              <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-facebook"></i></a></li>
+              <li><a class="fub-social-list__link" href="javascript:void(0);"><i class="social-icon icon-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script><script type="text/javascript" src="./js/vendor.js"></script></body>
+</html>

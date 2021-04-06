@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  background: #1c2431;
+  display: grid;
+}
+
+.box {
+  position: absolute;
+  background: #ff005c;
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  justify-self: center;
+}
